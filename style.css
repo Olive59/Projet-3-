@@ -33,8 +33,7 @@ h2
 }
 
 section
-{
-	
+{	
  	display: flex;	
  	margin: 20px;	
  	height: 80%;
@@ -53,11 +52,38 @@ section
 	margin: 20px;		
 	font-size: 30px;
 	position: relative;	
-	border-radius: 5px;
-		
+	border-radius: 5px;		
 }
 
-.note, .chic, .delice, .palette
+.note:hover
+{
+	transform: scale(2);
+	transform-origin: 100% bottom;
+	transform-origin: 100% right;	
+}
+
+.palette:hover
+{
+	transform: scale(2);
+	transform-origin: 100% bottom;
+	transform-origin: 100% right;	
+}
+
+.delice:hover
+{
+	transform: scale(2);
+	transform-origin: 100% bottom;
+	transform-origin: 100% right;	
+}
+
+.chic:hover
+{
+	transform: scale(2);
+	transform-origin: 100% bottom;
+	transform-origin: 100% right;	
+}
+
+.note, .chic, .delice, .palette, .charging
 {
 	position: absolute;	
 	top: 50%;
@@ -127,8 +153,7 @@ section .menu_palette
 	margin: 20px 130px;
 	background-color: #FFFFFF;
 	padding: 100px;
-	border: 5px solid #CDDC39;
-	
+	border: 5px solid #CDDC39;	
 }
 	
 .chic p
@@ -177,9 +202,15 @@ section .menu_palette
 {
 	font-size: 55px;
     text-align: center; 
-    padding-bottom: 40px;
+    padding-bottom: 40px;  
 }
 
+.delice h3
+{
+	 background: linear-gradient(120deg, #1A237E, #01579B);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .palette h3
 {
@@ -228,18 +259,40 @@ footer
 }
 
 #mention{
-	width: 50%;
-	
+	width: 50%;	
 	text-align: left;
 	font-size: 40px;
-	
+		
+}
+
+#mention:hover
+{
+	width: 50%;	
+	text-align: left;
+	font-size: 40px;
+	animation: wiggle 1s infinite;	
+}
+
+@keyframes wiggle
+{
+	0%{transform: rotate(-2deg)}
+	50%{transform: rotate(0deg)}	
+	100%{transform: rotate(5deg)}
 }
 
 #contact
 {
 	width: 50%;	
 	text-align: right;
-	font-size: 40px;	
+	font-size: 100px;	
+}
+
+#contact:hover
+{
+	width: 50%;	
+	text-align: right;
+	font-size: 40px;
+	animation: wiggle 1s infinite;	
 }
 
 .note_haut
@@ -275,8 +328,10 @@ footer
 .repas p
 {
 	width: 80%;
-	font-size: 30px;	
+	font-size: 30px;
 }
+
+
 
 .prix
 {
@@ -331,15 +386,8 @@ footer
     width: 30%;
     text-align: right;  
     font-size: 30px; 
-    padding-right: 10px;
-    
+    padding-right: 10px;   
 }
-
-p
-{
-	font-size: 20px;
-}
-
 
 
 h1 a
@@ -365,9 +413,7 @@ display: flex;
 	height: 40px;
 	border-bottom:  2px groove black;
 	border-radius: 5px;
-	box-shadow: 0px 2px 0px black;
-
-	
+	box-shadow: 0px 4px 0px black;	
 }
 
 .border_note2
@@ -375,7 +421,7 @@ display: flex;
 	width: 16%;
 	height: 40px;	
 	border-bottom:  2px groove black;
-	box-shadow: 0px 2px 0px black;
+	box-shadow: 0px 4px 0px black;
 	border-radius: 5px;	
 }
 
@@ -391,6 +437,13 @@ h4
 {
 	text-decoration: none;
 	color: black;
+}
+
+#news a
+{
+	text-decoration: none;
+	color: #FFC107; 
+	
 }
 
 .menu_palette a
@@ -419,7 +472,7 @@ h4
 
 .color_plat
 {
-color: #9C27B0;
+	color: #9C27B0;
 }
 
 .color_dessert
@@ -502,7 +555,7 @@ color: #9C27B0;
 }
 
 	
-#page_palette .title_border .border_palette1
+.border_palette1
 {
 	width: 10%;
 	height: 10px;
@@ -566,4 +619,401 @@ color: #9C27B0;
 	background: linear-gradient(120deg, #009688, #CDDC39);
 	-webkit-background-clip: border;
     -webkit-text-fill-color: transparent;	
-}	
+}
+
+.container
+{
+	height: 100%;
+	width: 100%;
+	position: relative;	
+}
+
+.loader-bars:before{ 
+	content:'';	
+	display: block;
+	position: absolute;
+	left: 1200px;
+	top: 450px;
+	border-radius: 50px;
+	border: 6px solid black;
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: grow 1s linear infinite;	
+	animation: grow 1s linear infinite;		
+}
+
+.loader-bars:after{ 
+	content:'';	
+	display: block;
+	position: absolute;
+	left: 1300px;
+	top: 450px;
+	border-radius: 50px;
+	border: 6px solid black;
+	background-color: #ffffff;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: grow 1s linear .2s infinite;	
+	animation: grow 1s linear .2s infinite;			
+	
+	
+}
+
+.span{ 
+	content:'';	
+	display: block;
+	position: absolute;
+	left: 1400px;
+	top: 450px;
+	border-radius: 50px;
+	border: 6px solid black;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: grow 1s linear .4s infinite;	
+	animation: grow 1s linear .4s infinite;		
+	
+}
+
+@keyframes grow{
+	0% {transform: scaleY(0); opacity:0;}
+	50% {transform: scaleY(1); opacity:1;}
+	100% {transform: scaleY(0); opacity:0;}
+}
+
+.container .animation_text
+{
+	font-size: 75px;
+	font-weight: bold;
+	position: absolute;	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------RESPONSIVE-------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1024px)
+{
+
+
+h1
+{
+	font-size: 70px;	
+}
+
+h2
+{
+	font-size: 20px;
+	
+}
+
+#sous_titre
+{	
+	font-size: 25px;
+	padding: 20px;
+}
+
+section
+{	
+ 	flex-wrap: wrap; 		
+ 	 		
+}   
+
+.menu_note, .menu_chic, .menu_palette, .menu_delice
+{	
+	width: 80%;
+	height: 40%;			
+}
+
+
+}
+
+#page_note
+{
+	margin: 0px 0px;	
+	padding: 0px;
+	width: 100%;
+}
+
+
+#page_chic
+{
+	margin: 0px 0px;	
+	padding: 0px;
+	width: 100%;	
+
+}
+
+
+#page_delice
+{
+	margin: 0px 0px;	
+	padding: 0px;
+	width: 100%;
+}
+
+#page_note
+{
+	margin: 0px 0px;	
+	padding: 0px;
+	width: 100%;
+}
+
+#page_palette
+{
+	margin: 0px 0px;
+	padding: 0px;
+	width: 100%;
+	border: none;	
+}
+	
+.chic p
+{	
+	font-size: 15px;
+}
+
+.palette p
+{	
+	font-size: 15px;
+}
+
+.delice p
+{
+	
+	font-size: 15px;
+}
+
+.note p
+{
+	
+	font-size: 15px;
+}
+
+
+.title_gradient
+{
+	
+    font-size: 35px;  
+    padding-bottom: 20px;   
+
+}
+
+.logo_delice
+{
+	font-size: 35px;   
+    padding-bottom: 20px;  
+}
+
+
+.logo_palette
+{
+    font-size: 35px; 
+    padding-bottom: 20px;
+}
+
+
+#news
+{	
+	height: 30px;	
+}
+
+footer
+{
+	
+	margin: 0px 0px 0px 0px;
+	height: 60px;
+	padding: 0px;	
+}
+
+#mention
+{	
+	font-size: 15px;		
+}
+
+
+#contact
+{
+	font-size: 15px;	
+}
+
+
+
+.note_haut
+{		
+	font-size: 15px;
+	padding: 0px 0px 0px 0px;
+}
+
+#plat
+{
+	display: flex;
+}
+
+#entree
+{
+	display: flex;
+}
+
+#dessert
+{
+	display: flex;
+}
+
+.repas
+{
+	width: 100%;
+	padding-bottom: 0px;
+
+}
+.repas p
+{
+	width: 90%;
+	font-size: 15px;
+}
+
+
+
+.prix
+{
+	width: 10%;	
+	padding-bottom: 0px;
+}
+
+.prix p 
+{
+	font-size: 15px;
+	text-align: right;
+	line-height: 220%;	
+}
+
+.dessert 
+{
+	width: 100%;
+	text-align: center;
+}
+
+.dessert p 
+{
+	font-size: 15px;
+}
+
+.note_bas {
+	
+	display: flex;
+	width: 100%;
+	padding-left: 40px;
+}
+
+.titre_bas
+{
+	 width: 100%;	 	 
+	 font-size: 15px;	
+}
+
+.page_palette h4
+{
+	padding-top: 40px;
+}
+
+.icone_bas 
+{	
+    width: 30%;     
+    font-size: 15px;    
+}
+
+p
+{
+	font-size: 20px;
+}
+
+
+h4
+{
+	
+	padding: 0px 0px 20px 0px;
+	font-size: 13px;
+		
+}
+
+.container
+{
+	height: 100%;
+	width: 100%;
+	position: relative;	
+}
+
+	
+
+
+
+.loader-bars:before{ 
+	content:'';	
+	display: block;
+	position: absolute;
+	left: 1200px;
+	top: 450px;
+	border-radius: 50px;
+	border: 6px solid black;
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: grow 1s linear infinite;	
+	animation: grow 1s linear infinite;		
+}
+
+.loader-bars:after{ 
+	content:'';	
+	display: block;
+	position: absolute;
+	left: 1300px;
+	top: 450px;
+	border-radius: 50px;
+	border: 6px solid black;
+	background-color: #ffffff;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: grow 1s linear .2s infinite;	
+	animation: grow 1s linear .2s infinite;			
+	
+	
+}
+
+.span{ 
+	content:'';	
+	display: block;
+	position: absolute;
+	left: 1400px;
+	top: 450px;
+	border-radius: 50px;
+	border: 6px solid black;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: grow 1s linear .4s infinite;	
+	animation: grow 1s linear .4s infinite;		
+	
+}
+
+
+
+
+.container .animation_text
+{
+	font-size: 35px;
+	
+	position: absolute;	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+}
+
+
+
+
+

@@ -6,28 +6,36 @@ body
 {
 	margin: 0px;
 	padding: 0px;
+	width: 100%;
 	font-family: "Comic sans MS";
 }
 
 header
-{
-	background-color: #579C87;
+{	
 	width: 100%;
-	height: 110px;
-	text-align: center;	
+	height: 100px;	
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	z-index: 99;
+	top: 0;	
+	margin-bottom: 40px;		
 }
 
 h1
 {
 	margin: 0px;
+	padding: 0px;
 	font-size: 80px;
 	color: #FDCB46;
+	position: fixed;
+	background-color: #579C87;
+	text-align: center;
+	width: 100%;	
 }
-a 
-{
-	margin: 0px;
-	position: 0px;
-}
+
+
+
 h2
 {
 	font-size: 60px;
@@ -38,14 +46,17 @@ h2
 {
 	text-align: center;
 	font-size: 40px;
-	padding: 20px;
+	position: absolute;
+	z-index: 98;
 }
 
 section
 {	
  	display: flex; 
- 	justify-content:space-around;
- 	margin: 40px 0px; 	 	
+ 	justify-content: space-around;
+ 	margin: 40px; 
+ 	width: 100%;
+ 	height: 700px; 		 	
 }   
 
 .title_center
@@ -59,15 +70,7 @@ section
 section a
 {
 	overflow: hidden;
-}
 
-.note:hover
-{
-	transform:scale(1.31);		
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;	
-	opacity: 0.8; 
-	
 }
 
 .note
@@ -78,38 +81,37 @@ section a
 	box-shadow: 20px 20px 3px #F1F1F1;				
 	font-size: 20px;		
 	border-radius: 5px;	
-	width: 500px;
-	height: 600px;
-	position: relative;		
+	width: 600px;
+	height: 700px;	
+	position: relative;
+			
 }
-
-
 
 .chic
 {
-	text-align: center;
+		text-align: center;
 	border: 3px #F1F1F1 solid;
 	box-shadow: 20px 20px 3px #F1F1F1;				
 	font-size: 20px;		
 	border-radius: 5px;	
-	width: 500px;
-	height: 600px;
+	width: 600px;
+	height: 700px;
 	position: relative;
-	background-color: #FFF5FE;		
+	background-color: #FFF5FE;	
 }
 
 .delice
 {
+
 	text-align: center;
 	border: 3px #F1F1F1 solid;
 	box-shadow: 20px 20px 3px #F1F1F1;				
 	font-size: 20px;		
 	border-radius: 5px;	
-	width: 500px;
-	height: 600px;
+	width: 600px;
+	height: 700px;
 	position: relative;		
-	background-color: #F9F9F9;
-	
+	background-color: #F9F9F9;	
 }
 
 .palette
@@ -119,73 +121,99 @@ section a
 	box-shadow: 20px 20px 3px #F1F1F1;				
 	font-size: 20px;		
 	border-radius: 5px;	
-	width: 500px;
-	height: 600px;
+	width: 600px;
+	height: 700px;
 	position: relative;
-	background-color: #FDFFDB;		
+	background-color: #FDFFDB;
+}
+
+.note:hover
+{
+	transform:scale(2);		
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;	
+	opacity: 0.5; 	
 }
 
 .chic:hover
 {
-	transform:scale(1.31);		
+	transform:scale(2);		
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;	
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .delice:hover
 {
-	transform:scale(1.31);		
+	transform:scale(2);		
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;	
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .palette:hover
 {
-	transform:scale(1.31);		
+	transform:scale(2);		
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;	
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 
-
-#news
+button
 {
-	background-color: #579C87;	
-	align-items: center;
-	height: 60px;
-	text-align: center;
-	margin: auto;
-	color: #FDCB46;
-	width: 50%;
+	position: fixed;	
+	
+	
+		
+	text-align: center;	
+	color: #FDCB46;	
 	border-radius: 6px;
-	padding-bottom: 20px;	
+	cursor: pointer;	
+	font-size: 30px;
+	box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+	background-color: #579C87;
+	width: 100%;
+	height: 100%;
+}
+
+.news 
+{
+	background-color: red;
+	width: 50%;
+	height: 70px;
+	position: relative;	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	bottom: 40px;	
 }
 
 footer
 {
-	background-color: #579C87;
-	margin: 40px 0px 0px 0px;	
+	position: fixed;
+	z-index:99;
+	background-color: #579C87;		
 	color: #FDCB46;
 	display: flex;
-	padding: 0px 40px 0px 40px;
+	bottom: 0px;	
 	height: 60px;
+	width: 100%;	
 }
 
 #mention
 {
 	width: 50%;	
 	text-align: left;
-	font-size: 30px;		
+	font-size: 30px;			
 }
 
 #contact
 {
+	
 	width: 50%;	
 	text-align: right;
-	font-size: 30px;	
+	font-size: 30px;		
 }
 
 #mention:hover
@@ -195,7 +223,13 @@ footer
 
 #contact:hover
 {		
-	animation: wiggle 1s infinite;	
+	animation: wiggle 1s infinite;
+	
+}
+
+footer a:hover
+{
+	color: #3F51B5;
 }
 
 @keyframes wiggle
@@ -231,8 +265,6 @@ footer
 	padding: 80px;
 }
 
-
-
 #page_palette
 {
 	margin: 20px 130px;
@@ -240,6 +272,10 @@ footer
 	padding: 100px;
 	border: 5px solid #CDDC39;	
 }
+
+
+
+
 	
 .chic p
 {
@@ -260,10 +296,8 @@ footer
 {
 	background: linear-gradient(120deg, #D58338 , #905BFD);
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      
+    -webkit-text-fill-color: transparent;      
 }
-
 
 .logo_chic
 {
@@ -272,8 +306,7 @@ footer
     -webkit-text-fill-color: transparent;
     font-size: 40px;
     text-align: center; 
-    padding-bottom: 40px;   
-
+    padding-bottom: 40px; 
 }
 
 .logo_delice
@@ -335,9 +368,8 @@ footer
 }
 
 .repas p
-{
-	width: 80%;
-	font-size: 20px;
+{	
+	font-size: 20px;		
 }
 
 .prix
@@ -420,7 +452,7 @@ h4
 	text-align: center;
 	padding: 0px 0px 0px 10px;
 	font-size: 30px;
-	width: 36%;
+	width: 25%;
 	margin-top: 40px;		
 }
 
@@ -454,6 +486,27 @@ h4
 {
 	color: #3F51B5;
 }
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------Annimation soulignement-----------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+h4
+{
+	background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+	transition: background-size .5s;
+ }
+  
+h4:hover {
+	background-size: 100% 100%;
+  }
+
+  .prix p:hover {
+	background-size: 100% 100%;
+  }
+
+  .dessert p:hover {
+	background-size: 100% 100%;
+  }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------BORDURES-------------------------------------------------------------------------------*/
@@ -519,18 +572,18 @@ h4
 	width: 35%;
 	border-radius: 18px;
 	margin-bottom: 50px;	
-	
 }
 	
 .border_palette
 {
-	width: 10%;
-	height: 10px;
+	width: 12%;
+	height: 10px;	
 	border-bottom:  10px groove;
 	border-radius: 10px;	
 	background: linear-gradient(120deg, #009688, #CDDC39);
 	-webkit-background-clip: border;
-    -webkit-text-fill-color: transparent;	
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;	
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -538,22 +591,38 @@ h4
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+#page_news
+{
+	width: 100%;	
+	display: flex;
+	background-color:#FFF5FE; 	
+}
+
 .container
 {
+	position: relative;
+	width: 1000px;
+	height: 700px;
 
-	height: 680px;
-	position: relative;	
+}
+
+.bloc
+{
+	width: 50%;
+	background-color: yellow;
 }
 
 .loader-bars:before{ 
 	content:'';	
 	display: block;
 	position: absolute;
-	left: 850px;
-	top: 320px;
+	left: 780px;
+	top: 330px;
 	border-radius: 50px;
-	border: 6px solid black;
-	background-color: blue;
+	border: 2px dotted black;
+	background: linear-gradient(120deg, #D58338 , #905BFD);
+	-webkit-background-clip: background;
+    -webkit-text-fill-color: transparent;      
 	width: 50px;
 	height: 50px;
 	-webkit-animation: grow 1s linear infinite;	
@@ -564,11 +633,13 @@ h4
 	content:'';	
 	display: block;
 	position: absolute;
-	left: 950px;
-	top: 320px;
+	left: 880px;
+	top: 330px;
 	border-radius: 50px;
-	border: 6px solid black;
-	background-color: #ffffff;
+	border: 2px dotted black;
+	background: linear-gradient(120deg, #D58338 , #905BFD);
+	-webkit-background-clip: background;
+    -webkit-text-fill-color: transparent;      
 	width: 50px;
 	height: 50px;
 	-webkit-animation: grow 1s linear .2s infinite;	
@@ -579,11 +650,13 @@ h4
 	content:'';	
 	display: block;
 	position: absolute;
-	left: 1050px;
-	top: 320px;
+	left: 980px;
+	top: 330px;
 	border-radius: 50px;
-	border: 6px solid black;
-	background-color: red;
+	border: 2px dotted black;
+	background: linear-gradient(120deg, #D58338 , #905BFD);
+	-webkit-background-clip: background;
+    -webkit-text-fill-color: transparent;      
 	width: 50px;
 	height: 50px;
 	-webkit-animation: grow 1s linear .4s infinite;	
@@ -598,13 +671,17 @@ h4
 
 .animation_text
 {
+	width: 50%;
 	font-size: 60px;
 	font-weight: bold;
 	position: absolute;	
+	background: linear-gradient(120deg, #D58338 , #905BFD);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;      
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding-right: 250px;
+	text-align: right;	
 }
 
 
@@ -614,6 +691,7 @@ h4
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*
+
 @media screen and (max-width: 1024px)
 {
 
@@ -733,7 +811,8 @@ footer
 {	
 	margin: 0px 0px 0px 0px;
 	height: 60px;
-	padding: 0px;	
+	padding: 0px;
+		
 }
 
 #mention
@@ -903,5 +982,4 @@ h4
 }
 
 
- 
-
+*/

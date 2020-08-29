@@ -1,5 +1,29 @@
+@font-face
+{
+    font-family: 'robotoblack';
+    src: url('fonts/Roboto-Black-webfont.eot');
+    src: url('fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Black-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Black-webfont.woff') format('woff'),
+         url('fonts/Roboto-Black-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face
+{
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -10,7 +34,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;	
-	font-family: "Comic sans MS";	
+	font-family: "Comic sans MS", "sans serif", roboto;	
 }	
 
 header
@@ -26,13 +50,14 @@ h1
 {
 	margin: 0px 0px 0px 0px;
 	padding: 0px;
-	font-size: 4em;
+	font-size: 5em;
 	color: #FDCB46;
 	position: fixed;	
 	background-color: #579C87;
 	text-align: center;
 	width: 100%;
-	padding: 20px;							
+	padding: 20px;	
+	font-family: 'robotoblack';						
 }
 
 h1 a, footer a
@@ -64,10 +89,6 @@ section
  	margin: 40px 0px 100px 0px; 	
  }
 
-h2 
-{
-	font-size: 2em;		
-}
 
 .title_center
 {	
@@ -140,12 +161,21 @@ a
     font-size: 30px; 
     padding-right: 20px;
 }
+
+.note h2
+{
+    padding-top: 8px;     
+	font-size: 2em;
+	font-family: "robotoblack";		    
+}
 .chic h2
 {
 	background: linear-gradient(120deg, #D58338, #905BFD);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     padding-top: 80px;     
+	font-size: 2em;
+	font-family: 'ambleregular';		    
 }
 
 .delice h2
@@ -153,6 +183,10 @@ a
 	 background: linear-gradient(200deg, #0431DF, #1E91FB);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-family: 'ambleregular';
+
+    
 }
 
 .palette h2
@@ -160,6 +194,8 @@ a
 	background: linear-gradient(120deg, #41963B, #D0FEA5);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-family: "robotoblack";    
 }
 
 .chic p
@@ -231,7 +267,8 @@ a
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	margin-bottom: 120px; 	 	
+	margin-bottom: 120px;
+	font-family: "robotoblack";	 	 	
  }
 
 footer
@@ -242,29 +279,31 @@ footer
 	color: #FDCB46;
 	display: flex;
 	bottom: 0px;	
-	width: 100%;			
+	width: 100%;	
+	padding: 0px 0px 0px 0px;
+	font-size: 2em;			
 }
 
 #mention
 {
-	padding: 20px;	
+	padding: 10px;	
 	width: 50%;	
-	text-align: left;
-	font-size: 2em;			
+	text-align: left;	
+	font-family: "robotoblack";				
 }
 
 #contact
 {	
-	padding: 20px;	
+	padding: 10px;	
 	width: 50%;	
-	text-align: right;
-	font-size: 2em;		
+	text-align: right;	
+	font-family: "robotoblack";			
 }
 
 #contact_seul
 {	
-	padding-top: 20px;		
-	font-size: 2em;		
+	font-family: "robotoblack";	
+
 }
 
 #mention:hover
@@ -306,6 +345,7 @@ footer a:hover
 	padding: 80px;
 	height: 100%;
 	color: #551A8B;
+
 }
 
 #page_chic
@@ -334,9 +374,20 @@ footer a:hover
 }
 .mentions_legales
 {
-	height: 600px; 
+	height: 100%
+	width: 100%;
+	margin-top: 100px;
+	 
 }
-
+#loi
+{	
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+	background-color: #FDFFDB;
+	padding: 10px;	
+	margin: 0px;		
+}
 .repas_prix
 {
 	position: relative;
@@ -344,7 +395,8 @@ footer a:hover
 	display: flex;
 	justify-content: space-around;
 	width: 100%;	
-	margin: 0px;	
+	margin: 0px;
+	padding: 20px 0px;	
 }
 #page_palette
 {
@@ -355,7 +407,7 @@ footer a:hover
 	position: relative;
 	height: 40px;
 	display: flex;
-	justify-content: space-around;
+	padding-bottom: 40px;
 	width: 100%;	
 }
 
@@ -365,6 +417,7 @@ footer a:hover
 	height: 40px;
 	font-size: 20px;	
 	padding-right: 0px;
+	
 
 }
 .element_prix
@@ -374,6 +427,7 @@ footer a:hover
 	font-size: 20px;
 	text-align: right;
 	padding-right: 0px;
+	
 }
 
 .dessert
@@ -383,7 +437,8 @@ footer a:hover
 	display: flex;
 	justify-content: space-around;
 	width: 100%;	
-	margin: 0px;	
+	margin: 0px;
+	padding: 20px 0px;
 }
 
 .element_dessert
@@ -392,16 +447,9 @@ footer a:hover
 	height: 40px;
 	font-size: 20px;	
 	padding-right: 0px;
+
 }
 
-#loi
-{	
-	width: 100%;
-	height: 600px;
-	padding: 10px;
-	background-color: #FDFFDB;
-	margin: 0px;		
-}
 
 #contact_seul
 {		
@@ -426,6 +474,7 @@ footer a:hover
     font-size: 40px;
     text-align: center; 
     padding-bottom: 40px; 
+    font-family: 'ambleregular';
 }
 
 .logo_delice
@@ -479,6 +528,7 @@ footer a:hover
 .page_palette h4
 {
 	padding-top: 40px;
+		
 }
 
 
@@ -493,7 +543,8 @@ h4
 	text-align: center;
 	font-size: 2em;
 	width: 40%;
-	margin-top: 40px;		
+	margin-top: 40px;
+	font-family: "robotoblack";			
 }
 
 #page_note h4
@@ -501,7 +552,9 @@ h4
 	text-align: center;
 	font-size: 2em;
 	width: 40%;
-	margin-top: 5px;		
+	margin-top: 5px;
+	font-family: "robotoblack";	
+			
 }
 
 #page_chic h4
@@ -509,7 +562,9 @@ h4
 	text-align: center;
 	font-size: 2em;
 	width: 40%;
-	margin-top: 0px;		
+	margin-top: 0px;
+	font-family: "ambleregular";	
+			
 }
 
 .color_entree
@@ -517,27 +572,12 @@ h4
 	color: #C67412;	
 }
 
-#page_chic #entree
-{
-	color: #C67412;
-}
-
 .color_plat 
 {
 	color: #9C27B0;
 }
 
-#page_chic #plat
-{
-	color: #9C27B0;
-}
-
 .color_dessert
-{
-	color: #3F51B5;
-}
-
-#page_chic #dessert
 {
 	color: #3F51B5;
 }
@@ -659,46 +699,44 @@ h4
 /*------------------------------------------------------------------------LOADER NEWS----------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
 #page_news
 {
 	width: 100%;
-	height: 800px;
-	display: flex;
-	position: relative;	
+	height: 500px;
+	background: linear-gradient(120deg, #D58338 , #905BFD);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 	
 }
 
 #bloc_loader
 {
 	width: 100%;
-	height: 100%;
-	position: relative;	 
+	height: 50%;
+	display: flex;
 }
 
+.loader
+{
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
 
 #text_loader 
 {
+	width: 50%;
+	height: 100%;
 	font-size: 4.5em;
-	font-weight: bold;		
-	background: linear-gradient(120deg, #D58338 , #905BFD);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 	
-	background-color: #FCDFDB;	
-	position: absolute;	
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); 
-	padding-right: 350px;
-	padding-top: 20px; 
+	font-weight: bold;	
+	padding: 0px 40px;
+	padding-top: 400px;
+	text-align: right;
 }
 
-.loader-bars:before{ 
+.loader-bars:before
+{ 
 	content:'';	
 	display: block;
-	position: absolute;
-	top: 50%;
-	left: 55%;
-	transform: translate(-50%, -55%); 
 	border-radius: 50px;
 	border: 2px dotted black;
 	background: linear-gradient(120deg, #D58338 , #905BFD);
@@ -707,16 +745,17 @@ h4
 	width: 50px;
 	height: 50px;
 	-webkit-animation: grow 1s linear infinite;	
-	animation: grow 1s linear infinite;		
+	animation: grow 1s linear infinite;
+	padding: 0px;
+	margin-left: 0px;
+	margin-top:  430px;
+	margin-right: 20px;
 }
 
-.loader-bars:after{ 
+.loader-bars:after
+{ 
 	content:'';	
 	display: block;
-	position: absolute;
-	top: 50%;
-	left: 60%;
-	transform: translate(-50%, -60%); 
 	border-radius: 50px;
 	border: 2px dotted black;
 	background: linear-gradient(120deg, #D58338 , #905BFD);
@@ -725,16 +764,15 @@ h4
 	width: 50px;
 	height: 50px;
 	-webkit-animation: grow 1s linear .2s infinite;	
-	animation: grow 1s linear .2s infinite;		
+	animation: grow 1s linear .2s infinite;	
+	margin-right: 0px 0px 20px 0px;	
+	margin-top:  430px;
 }
 
-.span{ 
+.span
+{ 
 	content:'';	
 	display: block;
-	position: absolute;
-	top: 50%;
-	left: 65%;
-	transform: translate(-50%, -65%); 
 	border-radius: 50px;
 	border: 2px dotted black;
 	background: linear-gradient(120deg, #D58338 , #905BFD);
@@ -745,133 +783,116 @@ h4
 	-webkit-animation: grow 1s linear .4s infinite;	
 	animation: grow 1s linear .4s infinite;	
 	text-align: left;
-
+	margin-top:  430px;
+	margin-right: 20px;
 }
 
-@keyframes grow{
+@keyframes grow
+{
 	0% {transform: scaleY(0); opacity:0;}
 	50% {transform: scaleY(1); opacity:1;}
 	100% {transform: scaleY(0); opacity:0;}
 }
-
-
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------RESPONSIVE max-width: 768px---------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 768px, max-width: 1000px)
-{
-.border_note
-{
-	width: 16%;
-	height: 40px;
-	border-bottom:  152px groove black;
-	border-radius: 35px;
-	box-shadow: 0px 2px 0px black;	
-}
-}
 
 
-@media screen and (max-width: 768px)
+
+@media screen and (max-width:1024px)
 {
 	section
 	{	
- 		display: flex; 
- 		justify-content: center;
  		flex-direction: column;
  		width: 100%;
  		height: 400px;
- 		margin: 0px 0px 20px 0px; 	
+ 		margin: 0px 0px 0px 0px; 	
  	}
 
 	.menu_haut
 	{	 	
- 		margin: 80px 0px 20px 0px; 	
+ 		margin: 80px 0px 0px 0px; 	
 	}
 
 	 .menu_bas
 	{	 	
- 		margin: 20px 0px 0px 0px; 	
-	}
-
-	h2 
-	{
-		font-size: 2em;		
+ 		margin: 0px; 	
 	}
 
 	section a
 	{	
-		width: 100%;	
+		width: 70%;	
 		height: 100%;
-		margin: 0px 0px;
+		margin: auto;
 		padding: 0px;			
 	}	
 
 
-.note, .chic, .palette, .delice
-{			
-	border: 5px #F1F1F1 solid;
-	box-shadow: 5px 5px 5px #F1F1F1;	
-	border-radius: 5px;		
-}
+	.note, .chic, .palette, .delice
+	{				
+		border: 5px #F1F1F1 solid;
+		box-shadow: 5px 5px 5px #F1F1F1;	
+		border-radius: 5px;		
+	}
 
-h1
-{
-	margin: 0px 0px 0px 0px;
-	font-size: 3em;
-	padding: 0px;							
-}
+	h1
+	{
+		margin: 0px;
+		font-size: 3em;
+		padding: 0px;							
+	}
 
-h2 
-{
-	font-size: 1em;		
-}
+	h2 
+	{
+		font-size: 1em;		
+	}
 
-.title_center
-{	
-	width: 100%;   		
-}
+	.title_center
+	{	
+		width: 100%;   		
+	}
 
-.note
-{
-	margin-top: 0px;
-	padding: 0px;
-}
+	.note
+	{
+		margin-top: 0px;
+		padding: 0px;
+	}
 
-.delice p, .note p, .chic p, .palette p
-{	
-	font-size: 1em;
-}
+	.delice p, .note p, .chic p, .palette p
+	{	
+		font-size: 1em;
+	}
 
-.prochainement
-{
-	width: 100%;	
-}
+	.prochainement
+	{
+		width: 100%;	
+	}
 
-.prochainement a
-{	
-	width: 70%;
-	font-size: 2em;	
-	margin-top: 40px;
-}
+	.prochainement a
+	{	
+		width: 70%;
+		font-size: 1.5em;	
+		margin-top: 40px;
+	}
 
-#mention
-{
-	padding: 20px;
-	font-size: 1em;			
-}
+	#mention
+	{
+		padding:20px;
+		font-size: 12px;			
+	}
 
-#contact
-{	
-	padding: 20px;
-	font-size: 1em;		
-}
+	#contact
+	{	
+		padding: 20px;
+		font-size: 12px;		
+	}
 
-#page_note
-{
-	margin: 0px 0px;	
-	margin-bottom: 100px;
-	padding: 20px;
-}
+	#page_note
+	{
+		margin: 0px 0px;	
+		margin-bottom: 100px;
+		padding: 20px;
+	}
 
 	#page_chic
 	{
@@ -952,7 +973,7 @@ h2
 	{
 		font-size: 15px;
 		padding-right: 0px;	
-		padding-bottom: 50px;	
+		padding-bottom: 0px;	
 	}
 
 	.page_palette h4
@@ -973,8 +994,17 @@ h2
 	#page_delice h4
 	{	
 		font-size: 12px;
-		width: 40%;
-		margin-bottom: 0px;		
+		width: 45%;
+		margin-bottom: 0px;
+		padding: 0px 5px;		
+	}
+
+	#page_chic h4
+	{	
+		font-size: 12px;
+		width: 50%;
+		margin-bottom: 0px;
+		padding: 0px 5px;		
 	}
 
 	#page_note h4
@@ -982,17 +1012,17 @@ h2
 		font-size: 14px;
 	}
 
-	#page_chic h4, #page_palette h4
+	#page_palette h4
 	{	
 		font-size: 14px;
-		width: 40%;
+		width: 50%;
 		margin-top: 0px;
 		padding: 0px 10px;
     }
 
 	.border_note
 	{
-		width: 16%;
+		width: 14%;
 		height: 10px;
 		border-bottom:  2px groove black;
 		border-radius: 5px;
@@ -1001,7 +1031,7 @@ h2
 
 	.border_chic, .border_chic2
 	{
-		width: 16%;
+		width: 8%;
 		height: 10px;
 		border-bottom:  4px solid #b71c1c;
 		border-radius: 28px;
@@ -1022,104 +1052,99 @@ h2
 		box-shadow: 4px 2px 0px #3F51B5;
 	}
 
+	
 	.border_delice
 	{
-		border-radius: 25px;
-		margin-bottom: 5px;
+		width: 30%;
+		border-radius: 18px;
+		margin-top: 40px;
+		height: 10px;	
 	}
 
 	.border_delice2
 	{
-		border-radius: 25px;
-		margin-bottom: 5px;
-		padding-bottom: 20px;
+		border-bottom:  4px dotted #2196F3;
+		box-shadow: 0px 3px 0px #2196F3;
+		width: 30%;
+		border-radius: 18px;
+		margin-top: 40px;
+		height: 10px;
 	}
 
 	.border_delice3
 	{
-		border-radius: 25px;
-		margin-bottom: 5px;	
+		border-bottom:  4px dotted #00BCD4;
+		box-shadow: 0px 3px 0px #00BCD4;
+		width: 30%;
+		border-radius: 18px;
+		margin-top: 40px;
+		height: 10px;	
 	}
 	
 	.border_palette
 	{
-		width: 12%;
+		width: 8%;
 		height: 10px;	
 		margin-top: 0px;	
 	}
-
-
-	#page_news
-	{
-		height: 300px;
-	}
-
-	#bloc_loader
-	{
-		position: static;
-		padding-top: 100px;		 
-	}
-
-
+	
 	#text_loader 
 	{
-		font-size: 2em;
-		position: static;	
-		top: 0%;
-		left: 0%;
-		transform: translate(0%, 0%); 
-		padding-left: 20px;
-		padding-top: 10px;
+		font-size: 1.5em;
+		padding: 200px 20px 200px 10px;
+
 	}
 
 	.loader-bars:before
-	{ 
-		top: 42%;
-		left: 60%;
-		transform: translate(-42%, -60%); 
+	{ 	     
 		width: 20px;
-		height: 20px;		
+		height: 20px;
+		margin: 210px 0px 0px 0px;
 	}
 
 	.loader-bars:after
-	{ 	
-		top: 42%;
-		left: 70%;
-		transform: translate(-42%, -70%); 
+	{ 	    
 		width: 20px;
-		height: 20px;		
+		height: 20px;
+		margin: 210px 0px 0px 10px;
 	}
 
 	.span
 	{ 
-		top: 42%;
-		left: 80%;
-		transform: translate(-42%, -80%);  
-		width: 20px;
+	    width: 20px;
 		height: 20px;
-	}
-
-	#loi
-	{	
-		width: 90%;	
-		padding: 0px;		
-		margin: 50px 0px 50px 0px;
-		font-size: 10px;
-		background-color: #FDFFDB;
-	}
-
-	#contact_seul
-	{		
-		font-size: 15px;
-		padding: 10px;
+		margin: 210px 0px 0px 10px;
 	}
 
 	.mentions_legales
 	{
-		padding: 40px;
-		margin: 0px;
-		background-color: #FDFFDB;	
+		height: 100%;
+		width: 100%;
+		margin-top: 70px;
+		margin-bottom: 40px;	 
 	}
+	
+	#loi
+	{	
+		width: 90%;
+		height: 100%;
+		font-size: 12px;
+		background-color: #FDFFDB;
+		margin: auto;
+		text-align: justify;
+	}
+
+	.mentions_legales h2
+	{
+		padding: 0px;
+		margin: 0px; 
+	}	
+
+	#contact_seul
+	{		
+		font-size: 14px;
+		padding: 10px 0px;
+	}	
 
 	#page_palette
 	{
@@ -1144,7 +1169,7 @@ h2
 		position: relative;
 		height: 30px;
 		width: 100%;	
-		padding-bottom: 0px;	
+		padding-bottom: 30px;	
 	}
 
 	.element_repas

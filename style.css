@@ -166,7 +166,7 @@ a
 {
     padding-top: 8px;     
 	font-size: 2em;
-	font-family: "robotoblack";		    
+		    
 }
 .chic h2
 {
@@ -175,7 +175,7 @@ a
     -webkit-text-fill-color: transparent; 
     padding-top: 80px;     
 	font-size: 2em;
-	font-family: 'ambleregular';		    
+		    
 }
 
 .delice h2
@@ -184,7 +184,7 @@ a
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2em;
-    font-family: 'ambleregular';
+  
 
     
 }
@@ -195,7 +195,7 @@ a
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2em;
-    font-family: "robotoblack";    
+    
 }
 
 .chic p
@@ -811,7 +811,7 @@ h4
 
 	.menu_haut
 	{	 	
- 		margin: 80px 0px 0px 0px; 	
+ 		margin: 100px 0px 0px 0px; 	
 	}
 
 	 .menu_bas
@@ -842,10 +842,41 @@ h4
 		padding: 0px;							
 	}
 
-	h2 
-	{
-		font-size: 1em;		
-	}
+	.note h2
+{
+    padding-top: 8px;     
+	font-size: 1em;
+		    
+}
+.chic h2
+{
+	background: linear-gradient(120deg, #D58338, #905BFD);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    padding-top: 80px;     
+	font-size: 1em;
+		    
+}
+
+.delice h2
+{
+	 background: linear-gradient(200deg, #0431DF, #1E91FB);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+  
+
+    
+}
+
+.palette h2
+{
+	background: linear-gradient(120deg, #41963B, #D0FEA5);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    
+}
 
 	.title_center
 	{	
@@ -924,7 +955,7 @@ h4
 	#sous_titre
 	{	
 		font-size: 1em;	
-		margin-top: 80px;
+		margin-top: 100px;
 	}
 
 	.logo_chic
@@ -1090,8 +1121,8 @@ h4
 	
 	#text_loader 
 	{
-		font-size: 1.5em;
-		padding: 200px 20px 200px 10px;
+		font-size: 30px;
+		padding: 200px 20px 200px 20px;
 
 	}
 

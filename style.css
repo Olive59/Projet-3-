@@ -863,7 +863,7 @@ transform: rotate(5deg);
 		height: 70%;	
 		margin: auto;
 	}
-
+}
 @media screen and (max-width:1024px)
 {
 
@@ -899,25 +899,15 @@ transform: rotate(5deg);
 	{	
 		font-size: 1.5em;
 	}
-	#logo_chic
-	{	
-    	font-size: 40px;		    
-	}
 
-	#logo_delice
+	#logo_chic h3, #logo_delice h3, #logo_palette
+	{
+	font-size: 40px;    
+	}
+	.note_haut
 	{
 		font-size: 40px;
-    	text-align: center; 
-    	padding-bottom: 40px;  
 	}
-
-	#logo_palette
-	{
-		font-size: 40px;
-    	text-align: center; 
-    	padding-bottom: 40px;
-	}
-	
 	.prochainement
 	{	
 		width: 100%;
@@ -1002,7 +992,7 @@ transform: rotate(5deg);
 		width: 8%;		
 	}
 
-
+}
 @media screen and (max-width: 900px)
 {
 	section
@@ -1049,7 +1039,7 @@ transform: rotate(5deg);
 	height: 80%;
 	}
 
-
+}
 @media screen and (max-width: 765px)
 { 
 	.page_palette h4
@@ -1099,10 +1089,7 @@ transform: rotate(5deg);
 	.border_note
 	{
 		width: 14%;
-		height: 10px;
-		border-bottom:  2px groove black;
-		border-radius: 5px;
-		box-shadow: 0px 2px 0px black;	
+		height: 10px;	
 	}
 
 	.border_chic, .border_chic2
@@ -1197,39 +1184,27 @@ transform: rotate(5deg);
 		font-size: 1em;			
 	}
 
-	.logo_chic
+	h3
 	{	
 	    font-size: 1em;
 	    padding-bottom: 20px; 
 	}
 
-	.logo_delice
+	#logo_chic h3, #logo_delice h3, #logo_palette
 	{
-		font-size: 1em;
-	    padding-bottom: 20px;  
-	}
-
-	.logo_palette
-	{
- 	   font-size: 1em;  
- 	   padding-bottom: 20px;
+		font-size: 20px;    
 	}
 
 	#note_haut
-	{	
-		font-size: 20px;		
-	}	
+	{
+		font-size: 20px;
+	}
 
 	.chic h2, .chic p
 	{
 		margin: 10px 0px 10px 0px;	
 		padding: 0px;	
-	}
-
-	#page_delice h3
-	{
-		padding-top: 20px;
-	}
+	}	
 
 	.note_bas 
 	{
@@ -1243,26 +1218,13 @@ transform: rotate(5deg);
 		padding-right: 0px;	
 		padding-bottom: 0px;	
 	}
-	#page_note h3
+
+	h3
 	{
 		font-size: 1em;
 		padding-bottom: 20px
 	}
 
-	#logo_chic
-	{
-	    font-size: 20px;
-    }
-
-	#logo_delice
-	{
-		font-size: 20px;   
-	}
-
-	#logo_palette
-	{
-		font-size: 20px;
-   	}
 
 	.prochainement a
 	{
@@ -1288,6 +1250,7 @@ transform: rotate(5deg);
 	height: 80%;
 
 	}
+}	
 @media screen and (max-width: 540px)
 {
 	#page_delice h4

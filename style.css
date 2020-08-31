@@ -26,7 +26,6 @@
          url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body
@@ -194,10 +193,7 @@ a
 	color: transparent;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
-    font-size: 2em;
-  
-
-    
+    font-size: 2em;    
 }
 
 .palette h2
@@ -210,9 +206,9 @@ a
     
 }
 
-#logo_chic
+#logo_chic h3
 {
-	background-image: linear-gradient(90deg, #D38143, #905BFD);
+	background-image: linear-gradient(120deg, #D58338, #905BFD);
 	color: transparent;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
@@ -222,7 +218,7 @@ a
     
 }
 
-#logo_delice
+#logo_delice h3
 {
 	font-size: 40px;
     text-align: center; 
@@ -230,11 +226,12 @@ a
 }
 
 
-#logo_palette
+#logo_palette h3
 {
-	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
+	background-image: linear-gradient(120deg, #D58338, #905BFD);
 	color: transparent;
 	-webkit-background-clip: text;
+	-moz-background-clip: text;
     font-size: 40px;
     text-align: center; 
     padding-bottom: 40px;
@@ -372,9 +369,17 @@ footer a:hover
 
 @keyframes wiggle
 {
-	0%{transform: rotate(-2deg)}
-	50%{transform: rotate(0deg)}	
-	100%{transform: rotate(5deg)}
+0%
+{transform: rotate(-2deg);
+}
+50%
+{
+transform: rotate(0deg);	
+}
+100%
+{
+transform: rotate(5deg);
+}
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -716,7 +721,7 @@ footer a:hover
 /*------------------------------------------------------------------------LOADER NEWS----------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-#boite
+#container
 {		
 	
 	width: 100%;
@@ -724,7 +729,7 @@ footer a:hover
 	position: relative;
 }
 
-#boite_loader
+#box_loader
 {		
 	width: 50%;
 	height: 20%;	
@@ -753,7 +758,7 @@ footer a:hover
     margin: auto;	
 }
 
-.boite_point
+.box
 {
 	width: 5%;
 	height: 50%;	
@@ -772,7 +777,7 @@ footer a:hover
 	margin: auto;	
 }
 
-#poin1
+#point1
 {
 	animation-delay:0s;
 }
@@ -837,12 +842,12 @@ footer a:hover
 
 	.palette h2
 	{
-    font-size: 1.5em;  
+    	font-size: 1.5em;  
 	}
 
 	#texte
 	{		
-	font-size: 3em;	
+		font-size: 3em;	
 	}
 
 
@@ -852,11 +857,11 @@ footer a:hover
 		height: 30px;
 	}
 
-	.boite_point
+	.box
 	{
-	width: 5%;
-	height: 70%;	
-	margin: auto;
+		width: 5%;
+		height: 70%;	
+		margin: auto;
 	}
 
 @media screen and (max-width:1024px)
@@ -896,22 +901,21 @@ footer a:hover
 	}
 	#logo_chic
 	{	
-    font-size: 40px;		    
+    	font-size: 40px;		    
 	}
 
 	#logo_delice
 	{
-	font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;  
+		font-size: 40px;
+    	text-align: center; 
+    	padding-bottom: 40px;  
 	}
-
 
 	#logo_palette
 	{
-	font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;
+		font-size: 40px;
+    	text-align: center; 
+    	padding-bottom: 40px;
 	}
 	
 	.prochainement
@@ -1039,7 +1043,7 @@ footer a:hover
 		height: 25px;
 	}
 
-	.boite_point
+	.box
 	{
 	width: 10%;
 	height: 80%;
@@ -1255,7 +1259,6 @@ footer a:hover
 		font-size: 20px;   
 	}
 
-
 	#logo_palette
 	{
 		font-size: 20px;
@@ -1267,13 +1270,11 @@ footer a:hover
 		font-size: 1.5em;		 	
  	}
 
-
 	#texte
 	{
 	width: 100%;		
 	font-size: 2em;	
 	}
-
 
 	#point1, #point2, #point3
 	{		
@@ -1281,8 +1282,8 @@ footer a:hover
 		height: 15px;
 	}
 
-	.boite_point
-{
+	.box
+	{
 	width: 30%;
 	height: 80%;
 
@@ -1491,10 +1492,10 @@ footer a:hover
 		height: 10px;
 	}
 
-	.boite_point
-{
+	.box 
+	{
 	width: 30%;
-	height: 90%;
+	height: 80%;
 
 	}
 
@@ -1521,7 +1522,7 @@ footer a:hover
 		height: 5px;
 	}
 
-	.boite_point
+	.box
 {
 	width: 30%;
 	height: 85%;

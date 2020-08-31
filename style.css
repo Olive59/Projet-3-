@@ -1184,13 +1184,7 @@ transform: rotate(5deg);
 		font-size: 1em;			
 	}
 
-	h3
-	{	
-	    font-size: 1em;
-	    padding-bottom: 20px; 
-	}
-
-	#logo_chic h3, #logo_delice h3, #logo_palette
+	#logo_chic h3, #logo_delice h3, #logo_palette h3
 	{
 		font-size: 20px;    
 	}

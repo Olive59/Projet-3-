@@ -36,6 +36,14 @@ body
 	font-family: "Comic sans MS", "sans serif", roboto;	
 }	
 
+#body_mentions
+{
+	margin: 0px;
+	padding: 0px;	
+	font-family: "Comic sans MS", "sans serif", roboto;
+	background-color: #FDFFDB;
+}	
+
 header
 {		
 	margin: 0px;
@@ -146,19 +154,28 @@ a
 	background-color: #FDFFDB;	
 }
 
-.icone, .icone_bas
+.icone i
 {
-	background: linear-gradient( #F15861, #e7cf1b);
+	background-image: linear-gradient(to left, rgb(246, 145, 106) 10%, rgb(241, 95, 98) 53%);
+	color: transparent;
+	background-clip: text;
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+         
 }
 
-.icone_bas 
-{	
+.icone_bas
+{
+	background-image: linear-gradient(to left, rgb(	246, 145, 106) 10%, rgb(241, 95, 98) 53%);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
     width: 30%;
     text-align: right;  
     font-size: 30px; 
     padding-right: 20px;
+    padding-top: 40px;
 }
 
 .note h2
@@ -169,19 +186,22 @@ a
 }
 .chic h2
 {
-	background: linear-gradient(120deg, #D58338, #905BFD);
+	background-image: linear-gradient(120deg, #D58338, #905BFD);
+	color: transparent;
+	background-clip: text;
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
     padding-top: 80px;     
-	font-size: 2em;
-		    
+	font-size: 2em;		    
 }
 
 .delice h2
 {
-	 background: linear-gradient(200deg, #0431DF, #1E91FB);
+	 background-image: linear-gradient(200deg, #0431DF, #1E91FB);
+	color: transparent;
+	background-clip: text;
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
     font-size: 2em;
   
 
@@ -190,11 +210,45 @@ a
 
 .palette h2
 {
-	background: linear-gradient(120deg, #41963B, #D0FEA5);
+	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
+	color: transparent;
+	background-clip: text;
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
     font-size: 2em;
     
+}
+
+#logo_chic
+{
+	background-image: linear-gradient(90deg, #D38143, #905BFD);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+    font-size: 40px;
+    text-align: center; 
+    padding-bottom: 40px; 
+    
+}
+
+#logo_delice
+{
+	font-size: 40px;
+    text-align: center; 
+    padding-bottom: 40px;  
+}
+
+
+#logo_palette
+{
+	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+    font-size: 40px;
+    text-align: center; 
+    padding-bottom: 40px;
 }
 
 .chic p
@@ -372,19 +426,18 @@ footer a:hover
 	border: 5px solid #CDDC39;
 	height: 100%;
 }
-.mentions_legales
+#mentions_legales
 {
-	height: 100%
+	height: 100%;
 	width: 100%;
-	margin-top: 100px;
-	 
+	margin-top: 150px;	 
 }
+
 #loi
 {	
 	width: 100%;
 	height: 100%;
 	font-size: 1em;
-	background-color: #FDFFDB;
 	padding: 10px;	
 	margin: 0px;		
 }
@@ -454,7 +507,8 @@ footer a:hover
 #contact_seul
 {		
 	margin: auto;
-	width: 100%
+	width: 100%;
+	text-align: center;
 	font-size: 20px;
 	padding: 10px;
 }
@@ -466,37 +520,7 @@ footer a:hover
 	margin-top: 150px;
 }
 
-.logo_chic
-{
-	background: linear-gradient(90deg, #D38143, #905BFD);
-	background-clip: text;
-    text-fill-color: transparent;
-    font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px; 
-    font-family: 'ambleregular';
-}
-
-.logo_delice
-{
-	font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;  
-}
-
-
-.logo_palette
-{
-	background: linear-gradient(120deg, #41963B, #D0FEA5);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;
-}
-
-
-.note_haut
+#note_haut
 {	
 	width: 40%;	
 	text-align: center;	
@@ -505,23 +529,19 @@ footer a:hover
 	padding: 0px 0px 30px 0px;
 }
 
-
-
 .note_bas 
 {
 	display: flex;
 	margin: auto;
 	width: 40%;	
 	padding-left: 20px;
-	vertical-align: bottom;
 }
 
 .titre_bas
 {
 	width: 70%;
 	text-align: left;	 
-	font-size: 20px;
-	text-align: left;
+	font-size: 30px;
 	padding-right: 50px;		
 }
 
@@ -537,13 +557,13 @@ footer a:hover
 	justify-content: space-around;
 }
 
-h4
+#page_palette h4
 {
 	text-align: center;
 	font-size: 2em;
 	width: 40%;
 	margin-top: 40px;
-	font-family: "robotoblack";			
+	font-family: "ambleregular";			
 }
 
 #page_note h4
@@ -556,14 +576,22 @@ h4
 			
 }
 
+#page_delice h4
+{
+	text-align: center;
+	font-size: 2em;
+	width: 40%;
+	margin-top: 5px;
+	font-family: "ambleregular";	
+			
+}
 #page_chic h4
 {
 	text-align: center;
 	font-size: 2em;
 	width: 40%;
 	margin-top: 0px;
-	font-family: "ambleregular";	
-			
+	font-family: "ambleregular";			
 }
 
 .color_entree
@@ -718,6 +746,7 @@ h4
 	justify-content: space-around;
 	margin: 20px;
 	
+	
 }
 
 #texte
@@ -727,17 +756,20 @@ h4
 	font-size: 5em;
 	text-align: right;
 	font-weight: bold;	
-	background: linear-gradient(120deg, #D58338 , #905BFD);
+	background-image: linear-gradient(120deg, #D58338 , #905BFD);
+	color: transparent;
+	background-clip: text;
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-    vertical-align: middle; 
-	
+	-moz-background-clip: text;
+    margin: auto;	
 }
-#boite_point
+
+.boite_point
 {
 	width: 5%;
-	height: 35%;	
+	height: 50%;	
 	margin: auto;
+
 }
 
 #point1, #point2, #point3
@@ -785,34 +817,21 @@ h4
 @media screen and (max-width:1440px)
 {	
 	
-.prochainement
-{
-	position: relative;
-	width: 100%;
-	margin-bottom: 350px;
-	
-}
+	.prochainement
+	{
+		width: 100%;
+		margin-bottom: 350px;	
+	}
 
-.prochainement a
-{
-	text-align: center;	
-	color: #FDCB46;	
-	border-radius: 6px;
-	cursor: pointer;
-	background-color: #579C87;		
-	box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.2);	
-	width: 40%;
-	font-size: 3.5em;
-	position: absolute;	
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
-	font-family: "robotoblack";	 	 	
- }
+	.prochainement a
+	{
+		width: 40%;
+		font-size: 3.5em; 	
+ 	}
 
 	#boite
 	{
-	height: 700px;	
+		height: 700px;	
 	}
 
 	#boite_loader
@@ -900,31 +919,16 @@ h4
 	}
 
 	
-.prochainement
-{
-	
-	width: 100%;
-	margin-bottom: 350px;
-	
-}
+	.prochainement
+	{	
+		width: 100%;
+	}
 
-.prochainement a
-{
-	text-align: center;	
-	color: #FDCB46;	
-	border-radius: 6px;
-	cursor: pointer;
-	background-color: #579C87;		
-	box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.2);	
-	width: 40%;
-	font-size: 3.5em;
-	position: absolute;	
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
-	font-family: "robotoblack";	 	 	
- }
-
+	.prochainement a
+	{	
+		width: 50%;
+		font-size: 2em;		 	 	
+ 	}
 
 	footer
 	{
@@ -1039,7 +1043,6 @@ h4
 	{	
  		flex-direction: column;
  		width: 100%;
- 		height: 600px;
  		margin: 0px 0px 200px 0px; 	
  	}
 
@@ -1115,29 +1118,16 @@ h4
 	}	
 
 	.prochainement
-{
-	
-	width: 100%;
-	margin-bottom: 200px;
-	
-}
+	{	
+		width: 100%;
+		margin-bottom: 200px;		
+	}
 
-.prochainement a
-{
-	text-align: center;	
-	color: #FDCB46;	
-	border-radius: 6px;
-	cursor: pointer;
-	background-color: #579C87;		
-	box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.2);	
-	width: 60%;
-	font-size: 1.5em;
-	position: absolute;	
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
-	font-family: "robotoblack";	 	 	
- }
+	.prochainement a
+	{
+		width: 60%;
+		font-size: 1.5em;		 	
+ 	}
 
 	#mention
 	{
@@ -1296,24 +1286,7 @@ h4
 	.border_chic, .border_chic2
 	{
 		width: 8%;
-		height: 10px;
-		border-bottom:  4px solid #b71c1c;
-		border-radius: 28px;
-		box-shadow: 4px 2px 0px #b71c1c;
-	}
-
-	.color_plat .border_chic, .color_plat .border_chic2   
-	{
-		border-bottom:  4px solid #9C27B0;
-		border-radius: 28px;
-		box-shadow: 4px 2px 0px #9C27B0;
-	}
-
-	.color_dessert .border_chic, .color_dessert .border_chic2
-	{
-		border-bottom:  4px solid #3F51B5;
-		border-radius: 28px;
-		box-shadow: 4px 2px 0px #3F51B5;
+		height: 10px;	
 	}
 
 	
@@ -1367,11 +1340,7 @@ h4
 		margin: 0px; 
 	}	
 
-	#contact_seul
-	{		
-		font-size: 14px;
-		padding: 10px 0px;
-	}	
+	
 
 	#page_palette
 	{
@@ -1472,6 +1441,152 @@ h4
 		height: 20px;	
 	}
 
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------RESPONSIVE max-width: 360px---------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+@media screen and (max-width:300px)
+{
+
+	
+	section a
+	{	
+		width: 90%;		
+	}	
+
+
+	h1
+	{
+		font-size: 2em;			
+	}
+
+
+	.note h2
+	{
+      
+		font-size: 0.8em;		    
+	}
+
+	.chic h2
+	{	
+  	     
+		font-size: 0.8em;		    
+	}
+
+	.delice h2
+	{	
+  	  font-size: 0.8em;    
+	}
+
+	.palette h2
+	{
+	    font-size: 0.8em;    
+	}
+
+	
+	.prochainement a
+	{
+		font-size: 1em;		 	
+ 	}
+
+	#mention
+	{
+		font-size: 10px;			
+	}
+
+	#contact
+	{	
+		font-size: 10px;		
+	}
+
+	#page_note
+	{
+		padding: 20px;
+	}	
+
+	.titre_bas
+	{
+		font-size: 12px;
+	}
+
+	.icone_bas 
+	{
+  	   	font-size: 12px; 
+    }
+
+
+	#page_delice h4
+	{	
+		font-size: 10px;
+	}
+
+	#page_chic h4
+	{	
+		font-size: 10px;
+	}
+
+	#page_note h4
+	{
+		font-size: 10px;
+	}
+
+	#page_palette h4
+	{	
+		font-size: 10px;
+	}
+		
+	#loi
+	{	
+		width: 80%;
+		font-size: 10px;		
+	}
+
+	.element_repas
+	{
+		font-size: 10px;		
+	}
+
+	.element_prix
+	{
+		font-size: 10px;	
+	}
+
+	.element_dessert
+	{
+		font-size: 10px;	
+	}
+
+	#boite
+	{		
+		height: 200px;			
+	}
+
+	#boite_loader
+	{		
+		width: 80%;
+		height: 20%;		
+		margin-right: 250px;
+		justify-content: space-between;
+	}
+
+	#texte
+	{		
+		font-size: 0.8em;	
+    	padding-left: 10px; 
+    	text-align: right;    
+	}
+
+	#boite_point
+	{
+		width: 5%;
+		height: 70%;	
+	}
+
+	#point1, #point2, #point3
+	{			
+		width: 10px;
+		height: 10px;	
+	}
 
 }

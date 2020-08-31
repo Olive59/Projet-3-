@@ -154,24 +154,18 @@ a
 	background-color: #FDFFDB;	
 }
 
-.icone i
+.icone i, .icone_bas i
 {
 	background-image: linear-gradient(to left, rgb(246, 145, 106) 10%, rgb(241, 95, 98) 53%);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
          
 }
 
-.icone_bas
+.icone_bas 
 {
-	background-image: linear-gradient(to left, rgb(	246, 145, 106) 10%, rgb(241, 95, 98) 53%);
-	color: transparent;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    width: 30%;
+	width: 30%;
     text-align: right;  
     font-size: 30px; 
     padding-right: 20px;
@@ -188,7 +182,6 @@ a
 {
 	background-image: linear-gradient(120deg, #D58338, #905BFD);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
     padding-top: 80px;     
@@ -199,7 +192,6 @@ a
 {
 	 background-image: linear-gradient(200deg, #0431DF, #1E91FB);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
     font-size: 2em;
@@ -212,7 +204,6 @@ a
 {
 	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
     font-size: 2em;
@@ -223,7 +214,6 @@ a
 {
 	background-image: linear-gradient(90deg, #D38143, #905BFD);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
     font-size: 40px;
@@ -244,7 +234,6 @@ a
 {
 	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
     font-size: 40px;
     text-align: center; 
@@ -435,7 +424,7 @@ footer a:hover
 
 #loi
 {	
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	font-size: 1em;
 	padding: 10px;	
@@ -717,8 +706,9 @@ footer a:hover
 	border-bottom:  10px groove;
 	border-radius: 10px;	
 	background: linear-gradient(120deg, #009688, #CDDC39);
+	color: transparent;
 	-webkit-background-clip: border;
-    -webkit-text-fill-color: transparent;
+	-moz-background-clip: border;   	
     margin-top: 60px;	
 }
 
@@ -758,7 +748,6 @@ footer a:hover
 	font-weight: bold;	
 	background-image: linear-gradient(120deg, #D58338 , #905BFD);
 	color: transparent;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
     margin: auto;	
@@ -809,58 +798,66 @@ footer a:hover
 	}	
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------reponsive max-width:1440px------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------RESPONSIVE --------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-@media screen and (max-width:1440px)
-{	
-	
-	.prochainement
-	{
-		width: 100%;
-		margin-bottom: 350px;	
-	}
-
-	.prochainement a
-	{
-		width: 40%;
-		font-size: 3.5em; 	
- 	}
-
-	#boite
-	{
-		height: 700px;	
-	}
-
-	#boite_loader
-	{		
-		width: 100%;
-		height: 20%;	
-		margin: 0px;	
-	}
+@media screen and (max-width: 1500px)
+{
 	#texte
 	{		
-		width: 70%;
-		height: 100%;	
-		font-size: 4em;
-		text-align: right;	
+	font-size: 4em;	
 	}
 
-	#boite_point
-	{
-		width: 20%;
-		height:60%;
+
+	#point1, #point2, #point3
+	{		
+		width: 35px;
+		height: 35px;
 	}
 }
 
+@media screen and (max-width: 1225px)
+{
+	.note h2
+	{
+   		padding-top: 0px;     
+		font-size: 1.5em;		    
+	}
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------reponsive 1024px------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.chic h2
+	{
+		font-size: 1.5em;
+	}
+
+	.delice h2
+	{	
+    	font-size: 1.5em;    
+	}
+
+	.palette h2
+	{
+    font-size: 1.5em;  
+	}
+
+	#texte
+	{		
+	font-size: 3em;	
+	}
 
 
+	#point1, #point2, #point3
+	{		
+		width: 30px;
+		height: 30px;
+	}
+
+	.boite_point
+	{
+	width: 5%;
+	height: 70%;	
+	margin: auto;
+	}
 
 @media screen and (max-width:1024px)
 {
@@ -892,32 +889,30 @@ footer a:hover
 		width: 100%;	   		
 	}
 
-	.note h2
-	{
-   		padding-top: 0px;     
-		font-size: 1.5em;		    
-	}
-
-	.chic h2
-	{
-		font-size: 1.5em;
-	}
-
-	.delice h2
-	{	
-    	font-size: 1.5em;    
-	}
-
-	.palette h2
-	{
-    font-size: 1.5em;  
-	}
-
+	
 	.delice p, .note p, .chic p, .palette p
 	{	
 		font-size: 1.5em;
 	}
+	#logo_chic
+	{	
+    font-size: 40px;		    
+	}
 
+	#logo_delice
+	{
+	font-size: 40px;
+    text-align: center; 
+    padding-bottom: 40px;  
+	}
+
+
+	#logo_palette
+	{
+	font-size: 40px;
+    text-align: center; 
+    padding-bottom: 40px;
+	}
 	
 	.prochainement
 	{	
@@ -1003,48 +998,15 @@ footer a:hover
 		width: 8%;		
 	}
 
-	#boite
-	{
-	height: 700px;	
-	}
 
-	#boite_loader
-	{		
-		width: 90%;
-		height: 20%;	
-		margin: 20px;	
-	}
-	#texte
-	{		
-		width: 60%;
-		height: 100%;	
-		font-size: 3.5em;
-		text-align: right;	
-	}
-
-	#boite_point
-	{
-		width: 20%;
-		height:70%;
-	}
-
-}
-
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------RESPONSIVE max-width: 768px---------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-@media screen and (max-width:768px)
+@media screen and (max-width: 900px)
 {
-
 	section
-	{	
- 		flex-direction: column;
- 		width: 100%;
+	{
+		flex-direction: column;
+		width: 100%;
  		margin: 0px 0px 200px 0px; 	
- 	}
+	}
 
 	.menu_haut
 	{	 	
@@ -1065,171 +1027,27 @@ footer a:hover
 	}	
 
 
-	.note, .chic, .palette, .delice
-	{				
-		border: 5px #F1F1F1 solid;
-		box-shadow: 5px 5px 5px #F1F1F1;	
-		border-radius: 5px;		
+	#texte
+	{		
+		font-size: 2em;	
 	}
 
-	h1
+
+	#point1, #point2, #point3
+	{		
+		width: 25px;
+		height: 25px;
+	}
+
+	.boite_point
 	{
-		margin: 0px;
-		font-size: 3em;
-		padding: 0px;							
+	width: 10%;
+	height: 80%;
 	}
 
-	.note h2
-	{
-      
-		font-size: 1em;		    
-	}
 
-	.chic h2
-	{	
-  	  padding-top: 80px;     
-		font-size: 1em;		    
-	}
-
-	.delice h2
-	{	
-  	  font-size: 1em;    
-	}
-
-	.palette h2
-	{
-	    font-size: 1em;    
-	}
-
-	.title_center
-	{	
-		width: 100%;   		
-	}
-
-	.note
-	{
-		margin-top: 0px;
-		padding: 0px;
-	}
-
-	.delice p, .note p, .chic p, .palette p
-	{	
-		font-size: 1em;
-	}	
-
-	.prochainement
-	{	
-		width: 100%;
-		margin-bottom: 200px;		
-	}
-
-	.prochainement a
-	{
-		width: 60%;
-		font-size: 1.5em;		 	
- 	}
-
-	#mention
-	{
-		padding:20px;
-		font-size: 12px;			
-	}
-
-	#contact
-	{	
-		padding: 20px;
-		font-size: 12px;		
-	}
-
-	#page_note
-	{
-		margin: 0px 0px;	
-		margin-bottom: 100px;
-		padding: 20px;
-	}
-
-	#page_chic
-	{
-		margin: 0px 0px;	
-		padding: 0px;
-		margin-bottom: 100px;
-	}
-
-	#page_delice
- 	{
-		margin: 0px 0px;
-		padding: 10px;
-		margin-bottom: 100px;
-	}
-
-	#page_palette
-	{
-		margin: 0px 0px;
-		padding: 10px;
-		margin-bottom: 100px;
-	}
-
-	#page_note h3
-	{
-		font-size: 1em;
-		padding-bottom: 20px
-	}
-
-	#sous_titre
-	{	
-		font-size: 1em;	
-		margin-top: 100px;
-	}
-
-	.logo_chic
-	{	
-	    font-size: 1.5em;
-	    padding-bottom: 20px; 
-	}
-
-	.logo_delice
-	{
-		font-size: 1.5em;
-	    padding-bottom: 20px;  
-	}
-
-	.logo_palette
-	{
- 	   font-size: 1.5em;  
- 	   padding-bottom: 20px;
-	}
-
-	.note_haut
-	{	
-		width: 50%;	
-		font-size: 1.5em;
-		padding: 0px 0px 0px 0px;
-	}
-
-	.chic h2, .chic p
-	{
-		margin: 10px 0px 10px 0px;	
-		padding: 0px;	
-	}
-
-	#page_delice h3
-	{
-		padding-top: 20px;
-	}
-
-	.note_bas 
-	{
-		width: 40%;	
-		padding-left: 0px;
-	}
-
-	.titre_bas
-	{
-		font-size: 15px;
-		padding-right: 0px;	
-		padding-bottom: 0px;	
-	}
-
+@media screen and (max-width: 765px)
+{ 
 	.page_palette h4
 	{
 		padding-top: 40px;
@@ -1294,20 +1112,23 @@ footer a:hover
 	{
 		width: 30%;
 		border-radius: 18px;
-		margin-top: 40px;
+		margin-top: 0px;
 		height: 10px;	
 	}
 
 	.border_delice2
 	{
 		width: 30%;	
-		margin-top: 40px;
+		margin-top: 0px;
 		height: 10px;
 	}
 
 	.border_delice3
 	{		
-		width: 30%;			
+		width: 30%;
+		margin-top: 0px;
+		border-radius: 18px;
+		height: 10px;			
 	}
 	
 	.border_palette
@@ -1316,53 +1137,9 @@ footer a:hover
 		height: 10px;	
 		margin-top: 0px;	
 	}
-	
-	.mentions_legales
-	{
-		height: 100%;
-		width: 100%;
-		margin-top: 70px;
-		margin-bottom: 40px;	 
-	}
-	
-	#loi
-	{	
-		width: 90%;
-		height: 100%;
-		font-size: 12px;		
-		margin: auto;
-		text-align: justify;
-	}
-
-	.mentions_legales h2
-	{
-		padding: 0px;
-		margin: 0px; 
-	}	
-
-	
-
-	#page_palette
-	{
-		height: 100%;
-		padding: 20px;	
-	}
-
-	#page_chic
-	{
-		
-		padding: 20px;
-	}
-
-	#page_delice
-	{
-	
-		padding: 20px;
-	}
 
 	.box_bottom
 	{
-		position: relative;
 		height: 30px;
 		width: 100%;	
 		padding-bottom: 30px;	
@@ -1407,123 +1184,125 @@ footer a:hover
 		font-size: 12px;	
 		padding-right: 0px;
 	}
-
-	#boite
-	{		
-		width: 100%;
-		height: 250px;		
-	}
-
-	#boite_loader
-	{		
-		width: 90%;
-		height: 20%;		
-		margin: 0px;
-	}
-
-	#texte
-	{		
-		width: 50%;
-		height: 100%;	
-		font-size: 1.5em;	
-    	padding-left: 10px; 	
-	}
-
-	#boite_point
-	{
-		width: 15%;
-		height: 50%;	
-	}
-
-	#point1, #point2, #point3
-	{			
-		width: 20px;
-		height: 20px;	
-	}
-
 }
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------RESPONSIVE max-width: 360px---------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width:300px)
+@media screen and (max-width: 605px)
 {
+	footer
+	{
+		font-size: 1em;			
+	}
 
-	
-	section a
+	.logo_chic
 	{	
-		width: 90%;		
+	    font-size: 1em;
+	    padding-bottom: 20px; 
+	}
+
+	.logo_delice
+	{
+		font-size: 1em;
+	    padding-bottom: 20px;  
+	}
+
+	.logo_palette
+	{
+ 	   font-size: 1em;  
+ 	   padding-bottom: 20px;
+	}
+
+	#note_haut
+	{	
+		font-size: 20px;		
 	}	
 
-
-	h1
+	.chic h2, .chic p
 	{
-		font-size: 2em;			
+		margin: 10px 0px 10px 0px;	
+		padding: 0px;	
 	}
 
-
-	.note h2
+	#page_delice h3
 	{
-      
-		font-size: 0.8em;		    
+		padding-top: 20px;
 	}
 
-	.chic h2
-	{	
-  	     
-		font-size: 0.8em;		    
-	}
-
-	.delice h2
-	{	
-  	  font-size: 0.8em;    
-	}
-
-	.palette h2
+	.note_bas 
 	{
-	    font-size: 0.8em;    
+		width: 40%;	
+		padding-left: 0px;
 	}
-
-	
-	.prochainement a
-	{
-		font-size: 1em;		 	
- 	}
-
-	#mention
-	{
-		font-size: 10px;			
-	}
-
-	#contact
-	{	
-		font-size: 10px;		
-	}
-
-	#page_note
-	{
-		padding: 20px;
-	}	
 
 	.titre_bas
 	{
-		font-size: 12px;
+		font-size: 15px;
+		padding-right: 0px;	
+		padding-bottom: 0px;	
+	}
+	#page_note h3
+	{
+		font-size: 1em;
+		padding-bottom: 20px
 	}
 
-	.icone_bas 
+	#logo_chic
 	{
-  	   	font-size: 12px; 
+	    font-size: 20px;
     }
 
+	#logo_delice
+	{
+		font-size: 20px;   
+	}
 
+
+	#logo_palette
+	{
+		font-size: 20px;
+   	}
+
+	.prochainement a
+	{
+		width: 70%;
+		font-size: 1.5em;		 	
+ 	}
+
+
+	#texte
+	{
+	width: 100%;		
+	font-size: 2em;	
+	}
+
+
+	#point1, #point2, #point3
+	{		
+		width: 15px;
+		height: 15px;
+	}
+
+	.boite_point
+{
+	width: 30%;
+	height: 80%;
+
+	}
+@media screen and (max-width: 540px)
+{
 	#page_delice h4
 	{	
 		font-size: 10px;
+		width: 45%;
+		margin-bottom: 0px;
+		padding: 0px 5px;		
 	}
 
 	#page_chic h4
 	{	
 		font-size: 10px;
+		width: 50%;
+		margin-bottom: 0px;
+		padding: 0px 5px;		
 	}
 
 	#page_note h4
@@ -1533,60 +1312,225 @@ footer a:hover
 
 	#page_palette h4
 	{	
-		font-size: 10px;
+		font-size: 10px;		
+    }
+}
+
+	@media screen and (max-width: 420px)
+{
+		.menu_haut
+	{	 	
+ 		margin: 100px 0px 0px 0px; 	
 	}
-		
+
+	 .menu_bas
+	{	 	
+ 		margin: 0px 0px 40px 0px; 
+	}
+
+	section a
+	{	
+		width: 70%;	
+		height: 100%;
+		margin: auto;
+		padding: 0px;			
+	}	
+
+	h1
+	{
+		margin: 0px;
+		font-size: 3em;
+		padding: 0px;							
+	}
+
+	.note h2
+	{
+      
+		font-size: 1em;		    
+	}
+
+	.chic h2
+	{	
+  	  padding-top: 80px;     
+		font-size: 1em;		    
+	}
+
+	.delice h2
+	{	
+  	  font-size: 1em;    
+	}
+
+	.palette h2
+	{
+	    font-size: 1em;    
+	}
+
+	
+	.title_center
+	{	
+		width: 100%;   		
+	}
+
+	.note
+	{
+		margin-top: 0px;
+		padding: 0px;
+	}
+
+	.delice p, .note p, .chic p, .palette p
+	{	
+		font-size: 1em;
+	}	
+
+	.prochainement
+	{	
+		width: 100%;
+		margin-bottom: 200px;		
+	}
+
+	
+	#mention
+	{
+		padding:20px;
+		font-size: 12px;			
+	}
+
+	#contact
+	{	
+		padding: 20px;
+		font-size: 12px;		
+	}
+
+	#page_note
+	{
+		margin: 0px 0px;	
+		margin-bottom: 100px;
+		padding: 20px;
+	}
+
+	#page_chic
+	{
+		margin: 0px 0px;	
+		padding: 0px;
+		margin-bottom: 100px;
+	}
+
+	#page_delice
+ 	{
+		margin: 0px 0px;
+		padding: 10px;
+		margin-bottom: 100px;
+	}
+
+	#page_palette
+	{
+		margin: 0px 0px;
+		padding: 10px;
+		margin-bottom: 100px;
+	}	
+
+	#sous_titre
+	{	
+		font-size: 1em;	
+		margin-top: 100px;
+	}	
+	
+	.mentions_legales
+	{
+		height: 100%;
+		width: 100%;
+		margin-top: 70px;
+		margin-bottom: 40px;	 
+	}
+	
 	#loi
 	{	
-		width: 80%;
-		font-size: 10px;		
+		width: 90%;
+		height: 100%;
+		font-size: 12px;		
+		margin: auto;
+		text-align: justify;
 	}
 
-	.element_repas
+	.mentions_legales h2
 	{
-		font-size: 10px;		
-	}
+		padding: 0px;
+		margin: 0px; 
+	}	
 
-	.element_prix
+	
+
+	#page_palette
 	{
-		font-size: 10px;	
+		height: 100%;
+		padding: 20px;	
 	}
 
-	.element_dessert
+	#page_chic
 	{
-		font-size: 10px;	
+		
+		padding: 20px;
 	}
 
-	#boite
-	{		
-		height: 200px;			
-	}
-
-	#boite_loader
-	{		
-		width: 80%;
-		height: 20%;		
-		margin-right: 250px;
-		justify-content: space-between;
+	#page_delice
+	{
+	
+		padding: 20px;
 	}
 
 	#texte
-	{		
-		font-size: 0.8em;	
-    	padding-left: 10px; 
-    	text-align: right;    
+	{
+		width: 100%;		
+		font-size: 1.5em;	
 	}
 
-	#boite_point
-	{
-		width: 5%;
-		height: 70%;	
-	}
 
 	#point1, #point2, #point3
-	{			
+	{		
 		width: 10px;
-		height: 10px;	
+		height: 10px;
 	}
 
+	.boite_point
+{
+	width: 30%;
+	height: 80%;
+
+	}
+
+	.prochainement a
+	{
+		width: 100%;
+		font-size: 1.5em;		 	
+ 	}
+
+	@media screen and (max-width: 275px)
+{
+
+
+	#texte
+	{
+	width: 100%;		
+	font-size: 1em;	
+	}
+
+
+	#point1, #point2, #point3
+	{		
+		width: 5px;
+		height: 5px;
+	}
+
+	.boite_point
+{
+	width: 30%;
+	height: 85%;
+
+	}
 }
+
+
+
+
+
+

@@ -1365,11 +1365,11 @@ h4
 
 	
 }
-@media screen and (max-width: 240px)
+@media screen and (max-width: 245px)
 {	
-	#texte
+		#texte
 	{		
-	font-size: 10px;	
+	font-size: 0.6em;	
 	}
 
 	.box
@@ -1387,7 +1387,30 @@ h4
 	{
 		margin-top: 250px;
 	}
+}
+
+@media screen and (max-width: 145px)
+{	
+		#texte
+	{		
+	font-size: 0.4em;	
+	}
+
+	.box
+	{
+		padding-top: 5px;	
+	}
+
+	#point1, #point2, #point3
+	{		
+		width: 5px;
+		height: 5px;
+	}
 	
+	#container
+	{
+		margin-top: 250px;
+	}
 
 	
 }

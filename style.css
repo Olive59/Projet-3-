@@ -71,7 +71,6 @@ h1 a, footer a
 	color: #FDCB46;	
 }
 
-
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------INDEX------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -93,8 +92,7 @@ section
  .menu_bas
 {		
  	margin: 40px 0px 150px 0px; 	
- }
-
+}
 
 .title_center
 {	
@@ -153,88 +151,61 @@ a
 	background-color: #FDFFDB;	
 }
 
-.icone i, .icone_bas i
+i
 {
 	background-image: linear-gradient(to left, rgb(246, 145, 106) 10%, rgb(241, 95, 98) 53%);
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-         
 }
 
-.icone_bas 
+
+
+h2
 {
-	width: 30%;
-    text-align: right;  
-    font-size: 30px; 
-    padding-right: 20px;
-    padding-top: 40px;
+	font-size: 2em;
 }
 
 .note h2
 {
-    padding-top: 8px;     
-	font-size: 2em;
-		    
+    padding-top: 8px;	    
 }
+
 .chic h2
 {
 	background-image: linear-gradient(120deg, #D58338, #905BFD);
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    padding-top: 80px;     
-	font-size: 2em;		    
+	padding-top: 80px;     
 }
 
 .delice h2
 {
-	 background-image: linear-gradient(200deg, #0431DF, #1E91FB);
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    font-size: 2em;    
+	background-image: linear-gradient(200deg, #0431DF, #1E91FB);
 }
 
 .palette h2
 {
 	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
+}
+
+h3
+{
+	font-size: 40px;
+    text-align: center; 
+    padding-bottom: 40px;
+}
+
+#logo_chic h3, #logo_palette h3, .palette h2, .delice h2, .chic h2, i, #texte
+{
 	color: transparent;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
-    font-size: 2em;
-    
 }
 
 #logo_chic h3
 {
 	background-image: linear-gradient(120deg, #D58338, #905BFD);
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px; 
-    
 }
-
-#logo_delice h3
-{
-	font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;  
-}
-
 
 #logo_palette h3
 {
-	background-image: linear-gradient(120deg, #D58338, #905BFD);
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;
+	background-image: linear-gradient(60deg, #41963B, #D0FEA5);
 }
 
 .chic p
@@ -251,7 +222,6 @@ a
 {	
 	font-size: 2em;
 }
-
 
 .note:hover
 {
@@ -386,40 +356,35 @@ transform: rotate(5deg);
 /*-----------------------------------------------------------------------PAGE MENU--------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-#page_note
+#page_note, #page_chic, #page_delice, #page_palette
 {
 	margin: 20px 130px 120px 130px;
-	background-color: #FCDFDB;
 	padding: 80px;
 	height: 100%;
-	color: #551A8B;
+}
 
+#page_note
+{
+	background-color: #FCDFDB;
+	color: #551A8B;
 }
 
 #page_chic
 {
-	margin: 20px 130px 120px 130px;	
-	padding: 80px;
-	background-color: #FFF5FE;
-	height: 100%;
+	background-color: #FFF5FE;	
 }
 
 #page_delice
 {
-	margin: 20px 130px 120px 130px;
 	background-color: #F9F9F9;
-	padding: 80px;
-	height: 100%;
 }
 
 #page_palette
 {
-	margin: 20px 130px 120px 130px;	
-	background-color: #FDFFDB;
-	padding: 80px;
-	border: 5px solid #CDDC39;
-	height: 100%;
+	background-color: #FDFFDB;	
+	border: 5px solid #CDDC39;	
 }
+
 #mentions_legales
 {
 	height: 100%;
@@ -435,6 +400,7 @@ transform: rotate(5deg);
 	padding: 10px;	
 	margin: 0px;		
 }
+
 .repas_prix
 {
 	position: relative;
@@ -445,10 +411,7 @@ transform: rotate(5deg);
 	margin: 0px;
 	padding: 20px 0px;	
 }
-#page_palette
-{
-	height: 100%;	
-}
+
 .box_bottom
 {
 	position: relative;
@@ -464,17 +427,15 @@ transform: rotate(5deg);
 	height: 40px;
 	font-size: 20px;	
 	padding-right: 0px;
-	
-
 }
+
 .element_prix
 {
 	width: 10%;
 	height: 40px;
 	font-size: 20px;
 	text-align: right;
-	padding-right: 0px;
-	
+	padding-right: 0px;	
 }
 
 .dessert
@@ -494,9 +455,7 @@ transform: rotate(5deg);
 	height: 40px;
 	font-size: 20px;	
 	padding-right: 0px;
-
 }
-
 
 #contact_seul
 {		
@@ -523,26 +482,34 @@ transform: rotate(5deg);
 	padding: 0px 0px 30px 0px;
 }
 
-.note_bas 
+#note_bas 
 {
 	display: flex;
-	margin: auto;
-	width: 40%;	
-	padding-left: 20px;
+	width: 100%;	
+}
+
+#note_bas p
+{
+	width: 38%;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 35px;
+}
+
+#note_bas i, .titre_bas h3
+{
+	font-size: 2.5em;
 }
 
 .titre_bas
 {
-	width: 70%;
-	text-align: left;	 
-	font-size: 30px;
-	padding-right: 50px;		
+	width: 62%;
+	text-align: left;			
 }
 
-.page_palette h4
+.titre_bas h3
 {
-	padding-top: 40px;
-		
+	text-align: left;	
 }
 
 .title_border
@@ -551,20 +518,22 @@ transform: rotate(5deg);
 	justify-content: space-around;
 }
 
-#page_palette h4
+h4
 {
 	text-align: center;
 	font-size: 2em;
 	width: 40%;
+}
+
+#page_palette h4
+{
+	padding-top: 40px;
 	margin-top: 40px;
 	font-family: "ambleregular";			
 }
 
 #page_note h4
 {
-	text-align: center;
-	font-size: 2em;
-	width: 40%;
 	margin-top: 5px;
 	font-family: "robotoblack";	
 			
@@ -572,18 +541,12 @@ transform: rotate(5deg);
 
 #page_delice h4
 {
-	text-align: center;
-	font-size: 2em;
-	width: 40%;
 	margin-top: 5px;
 	font-family: "ambleregular";	
 			
 }
 #page_chic h4
 {
-	text-align: center;
-	font-size: 2em;
-	width: 40%;
 	margin-top: 0px;
 	font-family: "ambleregular";			
 }
@@ -739,9 +702,7 @@ transform: rotate(5deg);
 	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: space-around;
-	margin: 20px;
-	
-	
+	margin: 20px;	
 }
 
 #texte
@@ -752,10 +713,7 @@ transform: rotate(5deg);
 	text-align: right;
 	font-weight: bold;	
 	background-image: linear-gradient(120deg, #D58338 , #905BFD);
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    margin: auto;	
+	margin: auto;	
 }
 
 .box
@@ -763,7 +721,6 @@ transform: rotate(5deg);
 	width: 5%;
 	height: 50%;	
 	margin: auto;
-
 }
 
 #point1, #point2, #point3
@@ -798,7 +755,9 @@ transform: rotate(5deg);
 	transform: scale(0.2);
 	background-color: #D58338;
 	}	
-	50% {transform: scale(1); 
+	50%
+	{
+	transform: scale(1); 
 	background-color: #905BFD;
 	}	
 }
@@ -824,27 +783,11 @@ transform: rotate(5deg);
 
 @media screen and (max-width: 1225px)
 {
-	.note h2
-	{
-   		padding-top: 0px;     
+	h2
+	{   		    
 		font-size: 1.5em;		    
 	}
-
-	.chic h2
-	{
-		font-size: 1.5em;
-	}
-
-	.delice h2
-	{	
-    	font-size: 1.5em;    
-	}
-
-	.palette h2
-	{
-    	font-size: 1.5em;  
-	}
-
+	
 	#texte
 	{		
 		font-size: 3em;	
@@ -879,6 +822,10 @@ transform: rotate(5deg);
  		margin: 150px 0px 0px 0px; 	
  	}
 
+ 	section a
+ 	{
+ 		margin: auto;
+ 	}
 	.menu_haut
 	{	
  		margin: 150px 0px 40px 0px; 	
@@ -893,24 +840,15 @@ transform: rotate(5deg);
 	{	
 		width: 100%;	   		
 	}
-
 	
-	.delice p, .note p, .chic p, .palette p
+	p
 	{	
 		font-size: 1.5em;
 	}
 
-	#logo_chic h3, #logo_delice h3, #logo_palette
+	#logo_chic, #logo_delice, #logo_palette, .note_haut
 	{
 	font-size: 40px;    
-	}
-	.note_haut
-	{
-		font-size: 40px;
-	}
-	.prochainement
-	{	
-		width: 100%;
 	}
 
 	.prochainement a
@@ -924,22 +862,7 @@ transform: rotate(5deg);
 		font-size: 1.5em;			
 	}
 
-	#page_note
-	{
-		margin: 20px 80px 120px 80px;
-	}
-
-	#page_chic
-	{
-		margin: 20px 80px 120px 80px;
-	}
-
-	#page_delice
-	{
-		margin: 20px 80px 120px 80px;
-	}
-
-	#page_palette
+	#page_note, #page_chic, #page_delice, #page_palette
 	{
 		margin: 20px 80px 120px 80px;
 	}
@@ -955,7 +878,7 @@ transform: rotate(5deg);
 		padding: 20px;			
  	}
 
- 	#page_delice h4
+ 	h4
  	{
  		font-size: 1.5em;
  	}
@@ -982,11 +905,7 @@ transform: rotate(5deg);
 		width: 30%;	
 	}
 
-	#page_palette h4
-	{
-		font-size: 2em;
-	}
-	
+		
 	.border_palette
 	{
 		width: 8%;		
@@ -1016,7 +935,7 @@ transform: rotate(5deg);
 	{	
 		width: 70%;	
 		height: 100%;
-		margin: auto;
+		margin: auto; 
 		padding: 0px;			
 	}	
 
@@ -1035,56 +954,40 @@ transform: rotate(5deg);
 
 	.box
 	{
-	width: 10%;
-	height: 80%;
+		width: 10%;
+		height: 80%;
 	}
 
 }
 @media screen and (max-width: 765px)
 { 
-	.page_palette h4
+	#note_bas i, .titre_bas h3
 	{
-		padding-top: 40px;
+		font-size: 2em;
 	}
 
-	.icone_bas 
+	#note_bas p
 	{
-  		width: 30%;
-    	text-align: center;  
-    	font-size: 15px; 
-    	padding-right: 0px;
-    	padding-top: 20px;
+		padding-right: 10px;
+	    padding-top: 0px;
+		width: 30%;
 	}
 
+	.titre_bas
+	{
+		width: 70%;
+	}
 
-	#page_delice h4
+	#sous_titre
+	{
+		font-size: 1.5em;	
+		margin-top: 150px;
+	}
+
+	h4
 	{	
 		font-size: 12px;
-		width: 45%;
-		margin-bottom: 0px;
-		padding: 0px 5px;		
 	}
-
-	#page_chic h4
-	{	
-		font-size: 12px;
-		width: 50%;
-		margin-bottom: 0px;
-		padding: 0px 5px;		
-	}
-
-	#page_note h4
-	{
-		font-size: 14px;
-	}
-
-	#page_palette h4
-	{	
-		font-size: 14px;
-		width: 50%;
-		margin-top: 0px;
-		padding: 0px 10px;
-    }
 
 	.border_note
 	{
@@ -1128,50 +1031,28 @@ transform: rotate(5deg);
 		height: 10px;	
 		margin-top: 0px;	
 	}
-
-	.box_bottom
-	{
-		height: 30px;
-		width: 100%;	
-		padding-bottom: 30px;	
-	}
-
-	.element_repas
-	{
-		width: 90%;
-		height: 30px;
-		font-size: 12px;	
-		padding-right: 0px;
-	}
-
-	.element_prix
-	{
-		width: 10%;
-		height: 30px;
+	
+	.element_repas, .element_prix
+	{	
 		font-size: 12px;	
 		padding-right: 0px;
 	}
 
 	.repas_prix
-	{
-		height: 30px;		
-		margin: 0px;
-		padding-bottom: 20px;
+	{				
+		margin: 0px;		
 		padding-top: 20px;	
 	}
 
 	.dessert
-	{	
-		height: 30px;	
+	{				
 		margin: 0px;
 		padding-bottom: 0px;
 		padding-top: 30px;	
 	}
 
 	.element_dessert
-	{
-		width: 100%;
-		height: 40px;
+	{		
 		font-size: 12px;	
 		padding-right: 0px;
 	}
@@ -1184,33 +1065,14 @@ transform: rotate(5deg);
 		font-size: 1em;			
 	}
 
-	#logo_chic h3, #logo_delice h3, #logo_palette h3
-	{
-		font-size: 20px;    
-	}
-
 	#note_haut
 	{
 		font-size: 20px;
 	}
-
-	.chic h2, .chic p
+	
+	#note_bas i, .titre_bas h3
 	{
-		margin: 10px 0px 10px 0px;	
-		padding: 0px;	
-	}	
-
-	.note_bas 
-	{
-		width: 40%;	
-		padding-left: 0px;
-	}
-
-	.titre_bas
-	{
-		font-size: 15px;
-		padding-right: 0px;	
-		padding-bottom: 0px;	
+		font-size: 1.5em;
 	}
 
 	h3
@@ -1219,17 +1081,16 @@ transform: rotate(5deg);
 		padding-bottom: 20px
 	}
 
-
 	.prochainement a
-	{
-		width: 70%;
-		font-size: 1.5em;		 	
+	{	
+		width: 60%;
+		font-size: 1.5em;		 	 	
  	}
 
 	#texte
 	{
-	width: 100%;		
-	font-size: 2em;	
+		width: 100%;		
+		font-size: 2em;	
 	}
 
 	#point1, #point2, #point3
@@ -1240,43 +1101,48 @@ transform: rotate(5deg);
 
 	.box
 	{
-	width: 30%;
-	height: 80%;
-
+		width: 30%;
+		height: 80%;
 	}
 }	
 @media screen and (max-width: 540px)
 {
-	#page_delice h4
+	h4
 	{	
-		font-size: 10px;
-		width: 45%;
-		margin-bottom: 0px;
-		padding: 0px 5px;		
+		font-size: 12px;	
 	}
 
-	#page_chic h4
-	{	
-		font-size: 10px;
-		width: 50%;
-		margin-bottom: 0px;
-		padding: 0px 5px;		
-	}
-
-	#page_note h4
+ @media screen and (max-width: 500px)  
+ { 	
+ 	#page_note, #page_chic, #page_delice, #page_palette
 	{
-		font-size: 10px;
+		margin: 120px 0px 100px 0px;
+		padding: 40px;
+		width: 80%;
 	}
 
-	#page_palette h4
-	{	
-		font-size: 10px;		
-    }
+	#sous_titre
+	{
+		display: none;
+	}
+
+	.element_repas, .element_prix
+	{		
+		
+		font-size: 10px;	
+		padding-right: 0px;
+	}
+
+	.element_dessert
+	{		
+		height: 40px;
+		font-size: 10px;	
+	}
 }
 
-	@media screen and (max-width: 420px)
+@media screen and (max-width: 420px)
 {
-		.menu_haut
+	.menu_haut
 	{	 	
  		margin: 100px 0px 0px 0px; 	
 	}
@@ -1286,44 +1152,16 @@ transform: rotate(5deg);
  		margin: 0px 0px 40px 0px; 
 	}
 
-	section a
-	{	
-		width: 70%;	
-		height: 100%;
-		margin: auto;
-		padding: 0px;			
-	}	
-
 	h1
 	{
-		margin: 0px;
 		font-size: 3em;
-		padding: 0px;							
 	}
 
-	.note h2
-	{
-      
+	h2
+	{      
 		font-size: 1em;		    
 	}
 
-	.chic h2
-	{	
-  	  padding-top: 80px;     
-		font-size: 1em;		    
-	}
-
-	.delice h2
-	{	
-  	  font-size: 1em;    
-	}
-
-	.palette h2
-	{
-	    font-size: 1em;    
-	}
-
-	
 	.title_center
 	{	
 		width: 100%;   		
@@ -1335,57 +1173,28 @@ transform: rotate(5deg);
 		padding: 0px;
 	}
 
-	.delice p, .note p, .chic p, .palette p
+	p
 	{	
 		font-size: 1em;
 	}	
 
-	.prochainement
+	.prochainement a
 	{	
-		width: 100%;
-		margin-bottom: 200px;		
-	}
-
+		width: 70%;
+		font-size: 1em;		 	 	
+ 	}
 	
-	#mention
+	#mention, #contact
 	{
-		padding:20px;
 		font-size: 12px;			
 	}
-
-	#contact
-	{	
-		padding: 20px;
-		font-size: 12px;		
-	}
-
-	#page_note
+	
+	#page_note, #page_chic, #page_delice, #page_palette
 	{
-		margin: 0px 0px;	
-		margin-bottom: 100px;
-		padding: 20px;
+		margin: 20px 0px 100px 0px;
+		padding: 80px;
+		width: 100%;
 	}
-
-	#page_chic
-	{
-		margin: 0px 0px;	
-		padding: 0px;
-		margin-bottom: 100px;
-	}
-
-	#page_delice
- 	{
-		margin: 0px 0px;
-		padding: 10px;
-		margin-bottom: 100px;
-	}
-
-	#page_palette
-	{
-		margin: 0px 0px;
-		padding: 10px;
-		margin-bottom: 100px;
-	}	
 
 	#sous_titre
 	{	
@@ -1414,26 +1223,6 @@ transform: rotate(5deg);
 	{
 		padding: 0px;
 		margin: 0px; 
-	}	
-
-	
-
-	#page_palette
-	{
-		height: 100%;
-		padding: 20px;	
-	}
-
-	#page_chic
-	{
-		
-		padding: 20px;
-	}
-
-	#page_delice
-	{
-	
-		padding: 20px;
 	}
 
 	#texte
@@ -1441,7 +1230,6 @@ transform: rotate(5deg);
 		width: 100%;		
 		font-size: 1.5em;	
 	}
-
 
 	#point1, #point2, #point3
 	{		
@@ -1451,27 +1239,22 @@ transform: rotate(5deg);
 
 	.box 
 	{
-	width: 30%;
-	height: 90%;
-
+		width: 30%;
+		height: 90%;
 	}
 
-	.prochainement a
+	#note_bas i, .titre_bas h3
 	{
-		width: 100%;
-		font-size: 1.5em;		 	
- 	}
-
-	@media screen and (max-width: 275px)
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 275px)
 {
-
-
 	#texte
 	{
-	width: 100%;		
-	font-size: 1em;	
+		width: 100%;		
+		font-size: 1em;	
 	}
-
 
 	#point1, #point2, #point3
 	{		
@@ -1480,10 +1263,9 @@ transform: rotate(5deg);
 	}
 
 	.box
-{
-	width: 30%;
-	height: 90%;
-
+	{
+		width: 30%;
+		height: 90%;
 	}
 }
 

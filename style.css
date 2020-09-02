@@ -2,7 +2,8 @@
 /*-----------------------------------------------------------------------GENERAL----------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@font-face {
+@font-face 
+{
     font-family: 'I-Am';
     src:url('fonts/I-Am.ttf.woff') format('woff'),
         url('fonts/I-Am.ttf.svg#I-Am') format('svg'),
@@ -12,7 +13,8 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'KaushanScript-Regular';
     src:url('fonts/KaushanScript-Regular.ttf.woff') format('woff'),
         url('fonts/KaushanScript-Regular.ttf.svg#KaushanScript-Regular') format('svg'),
@@ -33,7 +35,8 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Devonshire-Regular';
     src:url('fonts/Devonshire-Regular.ttf.woff') format('woff'),
         url('fonts/Devonshire-Regular.ttf.svg#Devonshire-Regular') format('svg'),
@@ -43,7 +46,8 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face 
+{ 
     font-family: 'Croissant-One';
     src:url('fonts/Croissant-One.ttf.woff') format('woff'),
         url('fonts/Croissant-One.ttf.svg#Croissant-One') format('svg'),
@@ -53,7 +57,8 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Gravity-Bold';
     src:url('fonts/Gravity-Bold.ttf.woff') format('woff'),
         url('fonts/Gravity-Bold.ttf.svg#Gravity-Bold') format('svg'),
@@ -574,33 +579,31 @@ h3
 h4
 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.8em;
 	width: 40%;
+	font-family: "Croissant-One";
 }
 
 #page_palette h4
 {
 	padding-top: 40px;
-	margin-top: 40px;
-	font-family: "ambleregular";			
+	margin-top: 30px;
+				
 }
 
 #page_note h4
 {
 	margin-top: 5px;
-	font-family: "robotoblack";				
 }
 
 #page_delice h4
 {
-	margin-top: 5px;
-	font-family: "ambleregular";			
+	margin-top: 5px;		
 }
 
 #page_chic h4
 {
-	margin-top: 0px;
-	font-family: "ambleregular";			
+	margin-top: 0px;		
 }
 
 .color_entree
@@ -1102,6 +1105,22 @@ h4
 }
 @media screen and (max-width: 766px)
 { 
+	#texte
+	{		
+		font-size: 2em;	
+	}
+
+	.box
+	{
+		padding-top: 10px;	
+	}
+
+	#point1, #point2, #point3
+	{		
+		width: 25px;
+		height: 25px;
+	}
+	
 	h3
 	{ 
    	 	padding-bottom: 20px;
@@ -1250,21 +1269,7 @@ h4
 }
 @media screen and (max-width: 680px)
 { 
-	#texte
-	{		
-		font-size: 2em;	
-	}
-
-	.box
-	{
-		padding-top: 10px;	
-	}
-
-	#point1, #point2, #point3
-	{		
-		width: 25px;
-		height: 25px;
-	}
+	
 
 	h1
 	{

@@ -72,14 +72,11 @@ body
 {
 	margin: 0px;
 	padding: 0px;	
-	font-family: "Comic sans MS", "sans serif", "I-Am";	
+	font-family: "Comic sans MS", "Croissant-One", "I-Am";	
 }	
 
 #body_mentions
 {
-	margin: 0px;
-	padding: 0px;	
-	font-family: "Comic sans MS", "sans serif", "I-Am";
 	background-color: #FDFFDB;
 }	
 
@@ -95,14 +92,13 @@ header
 h1
 {
 	margin: 0px;
-	padding: 0px;
+	padding: 20px;
 	font-size: 5em;
 	color: #FDCB46;
 	position: fixed;	
 	background-color: #579C87;
 	text-align: center;
 	width: 100%;
-	padding: 20px;	
 	font-family: 'I-Am';						
 }
 
@@ -476,6 +472,7 @@ h3
 	width: 100%;	
 	margin: 0px;
 	padding: 20px 0px;	
+	font-family: "Croissant-One";
 }
 
 .box_bottom
@@ -513,6 +510,7 @@ h3
 	width: 100%;	
 	margin: 0px;
 	padding: 20px 0px;
+	font-family: "Croissant-One";
 }
 
 .element_dessert
@@ -743,34 +741,34 @@ h4
 #container
 {		
 	width: 100%;
-	height: 100%;
+	height: 150px;
 	margin-top: 400px;	
 }
 
 #box_loader
 {		
-	width: 40%;
-	height: 30%;	
-	display: flex;
-	justify-content: flex-start;
-	margin: auto;	
+	width: 80%;
+	height: 100%;	
+	display: flex;	
+	justify-content: center;
+	margin: auto;
 }
 
 #texte
 {		
-	width: 100%;
+	width: 60%;
 	height: 100%;	
 	font-size: 5em;	
 	font-weight: bold;	
-	background-image: linear-gradient(120deg, #D58338 , #905BFD);		
+	background-image: linear-gradient(120deg, #D58338 , #905BFD);
+	text-align: right;		
 }
 
 .box
 {
-	width: 20%;
-	height: 80%;	
-	margin: auto;
-	padding-top: 40px;
+	width: 10%;
+	height: 100%;	
+	margin-top: 40px;	
 }
 
 #point1, #point2, #point3
@@ -780,7 +778,6 @@ h4
 	height: 40px;
 	-webkit-animation: grow 2s ease-in-out infinite;	
 	animation: grow 2s ease-in-out infinite;
-	margin: auto;	
 }
 
 #point1
@@ -967,23 +964,23 @@ h4
 		margin-top: 85px;		
 	}
 
+	
 	#texte
 	{		
-		width: 100%;
-		height: 100%;	
-		font-size: 3em;	
+		font-size: 3.2em;
 	}
 
 	.box
 	{
-		width: 20%;
-		padding-top: 20px;
+		width: 10%;
+		height: 100%;	
+		margin-top: 25px;	
 	}
 
 	#point1, #point2, #point3
 	{	
 		width: 35px;
-		height: 35px;	
+		height: 35px;
 	}
 	
 	#note_bas p
@@ -1004,10 +1001,40 @@ h4
 		width: 80%;
 	}
 
-}
 
 @media screen and (max-width: 600px)
-{
+{	
+	#container
+	{		
+		width: 100%;
+		height: 150px;
+		margin-top: 400px;	
+	}
+
+	#box_loader
+	{		
+		width: 80%;
+		height: 100%;
+	}
+
+	#texte
+	{		
+		font-size: 1.5em;
+	}
+
+	.box
+	{
+		width: 10%;
+		height: 100%;	
+		margin-top: 10px;	
+	}
+
+	#point1, #point2, #point3
+	{	
+		width: 20px;
+		height: 20px;
+	}
+
 	h1
 	{
 		font-size: 2em;
@@ -1174,30 +1201,6 @@ h4
 		margin-top: 70px;		
 	}
 
-	#texte
-	{		
-		width: 100%;
-		height: 100%;	
-		font-size: 1em;
-	}
-	#container
-{		
-		margin-top: 200px;	
-}
-
-
-	.box
-	{
-		width: 20%;
-		padding-top: 5px;
-	}
-
-	#point1, #point2, #point3
-	{	
-		width: 20px;
-		height: 20px;	
-	}
-	
 	#note_bas p
 	{
 		width: 30%;

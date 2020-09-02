@@ -814,130 +814,51 @@ h4
 /*---------------------------------------------------------------RESPONSIVE --------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1540px)
-{
-
-	#note_bas p
-	{
-		width: 20%;
-	}
-
-	#note_bas i, .titre_bas h3
-	{
-		font-size: 2.5em;
-	}
-
-	.titre_bas
-	{
-	width: 80%;				
-	}
- 
-	.titre_bas
-	{
-		width: 70%;
-		text-align: left;			
-	}
-
-	#container
-	{		
-		width: 100%;
-		height: 100%;
-		margin-top: 400px;	
-	}
-
-	#box_loader
-	{		
-		width: 40%;
-		height: 30%;	
-		display: flex;
-		justify-content: flex-start;
-		margin: auto;	
-	}
-
-	#texte
-	{		
-		font-size: 4em;	
-	}
-
-	#point1, #point2, #point3
-	{		
-		width: 35px;
-		height: 35px;
-	}
-}
-
-@media screen and (max-width: 1225px)
-{	
-
-	
-
-	#note_bas p
-	{
-		width: 20%;
-		padding-top: 20px;
-	}
-
-	#note_bas i, .titre_bas h3
-	{
-		font-size: 2em;
-
-	}
-
-	.titre_bas
-	{
-	width: 80%;				
-	}
-}
-
 @media screen and (max-width:1024px)
 {
-	h3
-	{ 
-   	 	padding-bottom: 20px;
-	}
-
-
+	
 	#logo_delice h3
 	{
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	#logo_chic h3
 	{
-		font-size: 2em;
-		padding-bottom: 20px;
+		font-size: 2.5em;
+		padding-bottom: 40px;
 	}
 
 	#logo_palette h3
 	{
-		font-size: 2em;
+		font-size: 3em;
+		padding-top: 40px;
 	}
 
 	#note_haut
 	{	
-		font-size: 2em;
+		font-size: 2.5em;
 		padding-bottom: 20px;	
 	}
 
 	.chic h2
 	{
 		padding-top: 80px; 
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.note h2
 	{
-		font-size: 2em;    
+		font-size: 2.5em;    
 	}
 
 	.delice h2
 	{
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 
 	.palette h2
 	{
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 
 	.delice p, .chic p, .palette p
@@ -949,33 +870,30 @@ h4
 	{
    		font-size: 1.5em;
 	}
-	h1
-	{
-		font-size: 3.5em;
-		margin: 0px;
-		padding: 10px
-	}	
 
 	section
+	{
+		height: 500px;
+	}
+
+	section a
 	{	
- 		width: 100%;
- 		height: 600px;
+ 		width: 45%; 		
   	}
 
   	#page_note, #page_chic, #page_delice, #page_palette
 	{
-	margin: 20px 60px 120px 60px;
-	padding: 20px;
+	margin: 20px 20px 100px 20px;
+	padding: 40px;
 	height: 100%;
 	}
 
 	.element_prix
 	{
 		text-align: center;
-		padding-right: 0px;	
 	}
 
-  	#sous_titre
+	#sous_titre
 	{	
 		font-size: 2em;	
 		margin-top: 80px;
@@ -1008,18 +926,13 @@ h4
  	}
  	.prochainement
 	{
-		margin-bottom: 200px;	
+		margin-bottom: 250px;	
 	}
 	footer
 	{
-		font-size: 1.5em;			
+		font-size: 2em;			
 	}
-
-	#page_note, #page_chic, #page_delice, #page_palette
-	{
-		margin: auto;		
-	}
-
+	
 	#mentions_legales
 	{	
 		width: 90%;
@@ -1053,102 +966,88 @@ h4
 		margin-top: 85px;		
 	}
 
-}
-@media screen and (max-width: 900px)
-{
-	section
-	{
-		flex-direction: column;
-		width: 100%; 		 	
-	}
-
-	.menu_haut
-	{	 	
- 		margin: 150px 0px 0px 0px; 	
-	}
-
-	 .menu_bas
-	{	 	
- 		margin: 0px 0px 60px 0px; 
-	}
-
-	section a
-	{	
-		width: 70%;	
-		margin: auto; 
-		padding: 0px;			
-	}	
-	.chic h2
-	{
-		padding-top: 0px;
-	}
-	.prochainement
-	{
-		margin-bottom: 180px;	
-	}	
-
 	#texte
 	{		
-	font-size: 3em;	
+		width: 100%;
+		height: 100%;	
+		font-size: 3em;	
 	}
 
 	.box
 	{
-		padding-top: 20px;	
+		width: 20%;
+		padding-top: 20px;
 	}
 
 	#point1, #point2, #point3
-	{		
-		width: 30px;
-		height: 30px;
+	{	
+		width: 35px;
+		height: 35px;	
 	}
-}
-@media screen and (max-width: 766px)
-{ 
 	
-
-	h3
-	{ 
-   	 	padding-bottom: 20px;
+	#note_bas p
+	{
+		width: 35%;
+		text-align: right;
+		padding-right: 10px;
+		padding-top: 25px;	
 	}
 
+	#note_bas i, .titre_bas h3
+	{
+		font-size: 2.5em;
+	}
 
-	#logo_delice h3
+	.titre_bas
+	{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 600px)
+{
+	h1
 	{
 		font-size: 1.5em;
+	}
+	#logo_delice h3
+	{
+		font-size: 2em;
 	}
 
 	#logo_chic h3
 	{
 		font-size: 1.5em;
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 	}
 
 	#logo_palette h3
 	{
-		font-size: 1.5em;
+		font-size: 2em;
+		padding-top: 40px;
 	}
 
 	#note_haut
 	{	
-		font-size: 1.5em;
+		font-size: 2em;
 		padding-bottom: 20px;	
 	}
 
 	.chic h2
 	{
-		padding-top: 80px; 
-		font-size: 1.5em;
+		padding-top: 0px; 
+		font-size: 1.2em;
 	}
 
 	.note h2
 	{
-		font-size: 1.5em;    
+		font-size: 2em;    
 	}
 
 	.delice h2
 	{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	.palette h2
@@ -1158,7 +1057,7 @@ h4
 
 	.delice p, .chic p, .palette p
 	{	
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	.note p
@@ -1166,431 +1065,208 @@ h4
    		font-size: 1.5em;
 	}
 
-	#note_bas p
+	section
 	{
-		width: 20%;
-		padding-top: 10px;
+		flex-direction: column;
+		height: 500px;
+		margin: 0px 0px 0px 0px;
 	}
 
-	#note_bas i, .titre_bas h3
-	{
-		font-size: 1.5em;
-	}	
-
-	h4
+	section a
 	{	
-		font-size: 16px;
-	}
+ 		width: 80%;
+ 		margin: auto; 		
+  	}
 
-	.border_note
+  	#page_note, #page_chic, #page_delice, #page_palette
 	{
-		width: 14%;
-		height: 10px;	
+	margin: 20px 0px 100px 0px;
+	padding: 10px;
+	height: 100%;
 	}
 
-	.border_chic, .border_chic2
+	.element_prix
 	{
-		width: 8%;
-		height: 10px;	
+		text-align: center;
 	}
-	
-	.border_delice
-	{
-		width: 30%;
-		border-radius: 18px;
-		margin-top: 0px;
-		height: 10px;	
-	}
-
-	.border_delice2
-	{
-		width: 30%;	
-		margin-top: 0px;
-		height: 10px;
-	}
-
-	.border_delice3
-	{		
-		width: 30%;
-		margin-top: 0px;
-		border-radius: 18px;
-		height: 10px;			
-	}
-	.border_palette
-	{
-		width: 10%;
-		margin-top: 20px;		
-	}
-
-	#page_palette h4			
-	{
-		margin-top: 20px;
-		padding-top: 0px;
-	}		
-	
-	.element_repas, .element_prix
-	{	
-		font-size: 12px;	
-		padding-right: 0px;
-	}
-
-	.repas_prix
-	{				
-		margin: 0px;		
-		padding-top: 20px;	
-	}
-
-	.dessert
-	{				
-		margin: 0px;
-		padding-bottom: 0px;
-		padding-top: 30px;	
-	}
-
-	.element_dessert
-	{		
-		font-size: 12px;	
-		padding-right: 0px;
-	}
-}
-@media screen and (max-width: 680px)
-{ 
-	
-
-	h1
-	{
-		font-size: 3em;
-	}
-	
-	#note_bas i, .titre_bas h3
-	{
-		font-size: 1em;
-	}
-
-	#note_bas p
-	{
-		padding-top: 0px;
-	}	
 
 	#sous_titre
+	{	
+		font-size: 1em;	
+		margin-top: 80px;
+	}
+
+ 	.menu_haut
+	{	
+ 		margin: 150px 0px 0px 0px; 	
+ 	}
+ 
+ 	.menu_bas
+	{		
+ 		margin: 0px 0px 50px 0px; 	
+ 	}
+
+	.title_center
+	{	
+		width: 100%;	   		
+	}
+
+	.delice p, .note p, .chic p, .palette p
 	{
 		font-size: 1.5em;
-	}
+	}	
 
-	#page_note, #page_chic, #page_delice, #page_palette
+	.prochainement a
+	{	
+		width: 50%;
+		font-size: 1em;
+		padding: 10px;		 	 	
+ 	}
+ 	.prochainement
 	{
-		margin:auto;
-		padding: 0px 10px;
-		width: 90%;
-	}
+		margin-bottom: 150px;
 
-	.element_repas, .element_prix
-	{			
-		font-size: 14px;	
-		padding: 0px;
 	}
-
-	.element_dessert
-	{		
-		height: 40px;			
-	}
-
 	footer
 	{
 		font-size: 1em;			
 	}
-
-	.prochainement a
-	{	
-		width: 60%;
-		font-size: 2em;		 	 	
- 	}
-
- 	.prochainement
-	{
-		margin-bottom: 160px;	
-	}	
-}
-
-@media screen and (max-width: 540px)
-{
-	h4
-	{	
-		font-size: 14px;	
-	}
-
- 	#page_note, #page_chic, #page_delice, #page_palette
-	{
-		margin: auto;
-		padding: 40px;
-		width: 80%;
-	}
-
-	.element_repas, .element_prix
-	{		
-		font-size: 10px;	
-		padding-right: 0px;
-	}
-
-	.element_dessert
-	{		
-		height: 40px;
-		font-size: 10px;	
-	}
-}
-
-@media screen and (max-width: 480px)
-{
-	.menu_haut
-	{	 	
- 		margin: 100px 0px 0px 0px; 	
-	}
-
-	 .menu_bas
-	{	 	
- 		margin: 0px 0px 40px 0px; 
-	}
-
-	h1
-	{
-		font-size: 2em;
-	}
-
-	h4
-	{
-		font-size: 0.8em;
-		margin: 0px;
-	}
 	
-	#note_bas p
-	{
-		margin-top: 0px;
-		margin-top: 10px;		
-	}
-
-	.title_center
+	#mentions_legales
 	{	
-		width: 100%;   		
-	}
-
-	.note
-	{
-		margin-top: 0px;
-		padding: 0px;
-	}
-
-	#mention, #contact
-	{
-		font-size: 12px;			
-	}
-	
-	#page_note, #page_chic, #page_delice, #page_palette
-	{
-		margin: 20px 0px 80px 0px; 
-		padding: 20px;
 		width: 90%;
+		margin: 120px 10px 100px 10px;
 	}
 
-	#sous_titre
-	{	
-		font-size: 1em;	
-		margin-top: 60px;
-	}		
-	
 	#loi
 	{	
-		width: 90%;
-		height: 100%;
-		font-size: 12px;		
-		margin: auto;
-		text-align: justify;
+		font-size: 1em;
+		padding: 20px;			
+ 	}
+
+ 	h4
+ 	{
+ 		font-size: 0.8em;
+ 	}
+
+ 	.border_note
+	{
+		width: 10%;
+		height: 10px;
 	}
 
-	.mentions_legales h2
+	.border_chic, .border_chic2
 	{
-		padding: 0px;
-		margin: 0px; 
+		width: 10%;
+	}
+
+	.border_delice, .border_delice2,.border_delice3
+	{	
+		width: 30%;
+	}
+		
+	.border_palette
+	{
+		width: 8%;
+		margin-top: 70px;		
 	}
 
 	#texte
 	{		
-	font-size: 1.5em;	
+		width: 100%;
+		height: 100%;	
+		font-size: 1em;
 	}
+	#container
+{		
+		margin-top: 200px;	
+}
+
 
 	.box
 	{
-		padding-top: 5px;	
+		width: 20%;
+		padding-top: 5px;
 	}
 
 	#point1, #point2, #point3
-	{		
+	{	
 		width: 20px;
-		height: 20px;
+		height: 20px;	
 	}
 	
-	#container
+	#note_bas p
 	{
-		margin-top: 250px;
+		width: 30%;
+		text-align: right;
+		padding-right: 10px;
+		padding-top: 0px;	
 	}
-}
 
-@media screen and (max-width: 400px)
-{	
-
-
-	.prochainement a
+	#note_bas i, .titre_bas h3
 	{
-		font-size: 1.5em;
+		font-size: 1em;
+	}
+
+	.titre_bas
+	{
+		width: 80%;
 	}
 	
 	.repas_prix
-	{		
-		margin-top: 20px;
-		margin-bottom: 0px;
-		padding: 10px 0px;
-	}
-
-	.box_bottom
-	{
-		padding-bottom: 0px;
-	}	
-
-	.dessert
-	{					
-		margin-top: 20px;
-		padding: 10px 0px;
-	}	
-
-	.element_repas, .element_prix
-	{			
-		font-size: 10px;	
-	}
-	
-	.element_dessert
-	{				
-		font-size: 10px;	
-	}
-
-	#note_bas
-	{
-		font-size: 1.5em;
-		padding-left: 35px;
-	}
-	
-	#texte
-	{		
-		font-size: 1em;	
-	}
-
-	.box
-	{
-		padding-top: 5px;	
-	}
-
-	#point1, #point2, #point3
-	{		
-		width: 15px;
-		height: 15px;
-	}
-	
-	.titre_bas h3
-	{
-		font-size: 0.6em;
-	}
-
-	#note_bas p
-	{
-		margin-top: 3px;
-	}	
+{
+	position: relative;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;	
+	margin: 0px;
+	padding: 20px 0px;	
 }
 
-@media screen and (max-width: 300px)
-{	
-	.prochainement a
-	{
-		font-size: 1em;
-	}
+.box_bottom
+{
+	height: 40px;
+	display: flex;
+	padding-bottom: 40px;
+	width: 100%;	
+}
 
-	#texte
-	{		
-		font-size: 0.6em;	
-	}
+.element_repas
+{
+	width: 90%;
+	height: 40px;
+	font-size: 12px;	
+	padding-right: 0px;
+}
 
-	.box
-	{
-		padding-top: 5px;	
-	}
+.element_prix
+{
+	width: 10%;
+	height: 40px;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 0px;	
+}
 
-	#point1, #point2, #point3
-	{		
-		width: 10px;
-		height: 10px;
-	}
-	
-	#container
-	{
-		margin-top: 250px;
-	}
+.dessert
+{
+	position: relative;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;	
+	margin: 0px;
+	padding: 20px 0px;
+}
 
-	h3
-	{ 
-   	 	padding-bottom: 20px;
-	}
+.element_dessert
+{
+	width: 100%;
+	height: 40px;
+	font-size: 12px;	
+	padding-right: 0px;
+}
 
-
-	#logo_delice h3
-	{
-		font-size: 1em;
-	}
-
-	#logo_chic h3
-	{
-		font-size: 1em;
-		padding-bottom: 20px;
-	}
-
-	#logo_palette h3
-	{
-		font-size: 1em;
-	}
-
-	#note_haut
-	{	
-		font-size: 1em;
-		padding-bottom: 20px;	
-	}
-
-	.chic h2
-	{
-		padding-top: 80px; 
-		font-size: 1em;
-	}
-
-	.note h2
-	{
-		font-size: 1em;    
-	}
-
-	.delice h2
-	{
-		font-size: 1em;
-	}
-
-	.palette h2
-	{
-		font-size: 1em;
-	}
-
-	.delice p, .chic p, .palette p
-	{	
-		font-size: 1em;
-	}
-
-	.note p
-	{
-   		font-size: 1em;
-	}
-	
-	
 }
 

@@ -2,15 +2,43 @@
 /*-----------------------------------------------------------------------GENERAL----------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+@font-face {
+    font-family: 'I-Am';
+    src:url('fonts/I-Am.ttf.woff') format('woff'),
+        url('fonts/I-Am.ttf.svg#I-Am') format('svg'),
+        url('fonts/I-Am.ttf.eot'),
+        url('fonts/I-Am.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KaushanScript-Regular';
+    src:url('fonts/KaushanScript-Regular.ttf.woff') format('woff'),
+        url('fonts/KaushanScript-Regular.ttf.svg#KaushanScript-Regular') format('svg'),
+        url('fonts/KaushanScript-Regular.ttf.eot'),
+        url('fonts/KaushanScript-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face
 {
-    font-family: 'robotoblack';
-    src: url('fonts/Roboto-Black-webfont.eot');
-    src: url('fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Black-webfont.woff2') format('woff2'),
-         url('fonts/Roboto-Black-webfont.woff') format('woff'),
-         url('fonts/Roboto-Black-webfont.ttf') format('truetype'),
-         url('fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-family: 'Chopin-Script';
+    src:url('fonts/Chopin-Script.ttf.woff') format('woff'),
+        url('fonts/Chopin-Script.ttf.svg#Chopin-Script') format('svg'),
+        url('fonts/Chopin-Script.ttf.eot'),
+        url('fonts/Chopin-Script.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Devonshire-Regular';
+    src:url('fonts/Devonshire-Regular.ttf.woff') format('woff'),
+        url('fonts/Devonshire-Regular.ttf.svg#Devonshire-Regular') format('svg'),
+        url('fonts/Devonshire-Regular.ttf.eot'),
+        url('fonts/Devonshire-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -28,18 +56,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gravity-Bold';
+    src:url('fonts/Gravity-Bold.ttf.woff') format('woff'),
+        url('fonts/Gravity-Bold.ttf.svg#Gravity-Bold') format('svg'),
+        url('fonts/Gravity-Bold.ttf.eot'),
+        url('fonts/Gravity-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
 	margin: 0px;
 	padding: 0px;	
-	font-family: "Comic sans MS", "sans serif", roboto;	
+	font-family: "Comic sans MS", "sans serif", "I-Am";	
 }	
 
 #body_mentions
 {
 	margin: 0px;
 	padding: 0px;	
-	font-family: "Comic sans MS", "sans serif", roboto;
+	font-family: "Comic sans MS", "sans serif", "I-Am";
 	background-color: #FDFFDB;
 }	
 
@@ -63,7 +101,7 @@ h1
 	text-align: center;
 	width: 100%;
 	padding: 20px;	
-	font-family: 'robotoblack';						
+	font-family: 'I-Am';						
 }
 
 h1 a, footer a
@@ -155,54 +193,41 @@ i
 	background-image: linear-gradient(to left, rgb(246, 145, 106) 10%, rgb(241, 95, 98) 53%);
 }
 
-h2
-{
-	font-size: 2em;
+.note p
+{    
+    font-family: "Gravity-Bold";
+    font-size: 1.5em;
 }
 
-.note h2
-{
-    padding-top: 8px;	    
+.palette p, .delice p
+{    
+    font-family: "KaushanScript-Regular";
 }
 
 .chic h2
 {
 	background-image: linear-gradient(120deg, #D58338, #905BFD);
-	padding-top: 80px;     
+	padding-top: 80px; 
+	font-size: 2em;    
+}
+
+.note h2
+{
+	font-size: 2em;    
 }
 
 .delice h2
 {
 	background-image: linear-gradient(200deg, #0431DF, #1E91FB);
+	font-family: "Chopin-Script";
+	font-size: 2.5em;
 }
 
 .palette h2
 {
 	background-image: linear-gradient(120deg, #41963B, #D0FEA5);
-}
-
-h3
-{
-	font-size: 40px;
-    text-align: center; 
-    padding-bottom: 40px;
-}
-
-#logo_chic h3, #logo_palette h3, .palette h2, .delice h2, .chic h2, i, #texte
-{
-	color: transparent;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-}
-
-#logo_chic h3
-{
-	background-image: linear-gradient(120deg, #D58338, #905BFD);
-}
-
-#logo_palette h3
-{
-	background-image: linear-gradient(60deg, #41963B, #D0FEA5);
+	font-family: "KaushanScript-Regular";
+	font-size: 2.5em;
 }
 
 .chic p
@@ -215,10 +240,11 @@ h3
 	color: #72BF56;	
 }
 
-.delice p, .note p, .chic p, .palette p
+.delice p, .chic p, .palette p
 {	
 	font-size: 2em;
 }
+
 
 .note:hover
 {
@@ -256,7 +282,8 @@ h3
 {
 	position: relative;
 	width: 100%;
-	margin-bottom: 280px;	
+	margin-bottom: 280px;
+
 }
 
 .prochainement a
@@ -273,7 +300,8 @@ h3
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);	
-	font-family: "robotoblack";	 	 	
+	font-family: "Gravity-Bold";
+	padding: 20px;	 	 	
  }
 
 footer
@@ -286,7 +314,6 @@ footer
 	bottom: 0px;	
 	width: 100%;	
 	font-size: 2em;
-
 }
 
 #mention
@@ -294,7 +321,7 @@ footer
 	padding: 10px;	
 	width: 50%;	
 	text-align: left;	
-	font-family: "robotoblack";	
+	font-family: "Gravity-Bold";	
 	padding-left: 20px;			
 }
 
@@ -303,13 +330,13 @@ footer
 	padding: 10px;	
 	width: 50%;	
 	text-align: right;	
-	font-family: "robotoblack";	
+	font-family: "Gravity-Bold";	
 	padding-right: 20px;			
 }
 
 #contact_seul
 {	
-	font-family: "robotoblack";	
+	font-family: "Gravity-Bold";	
 	padding: 20px;
 	margin: auto;
 	width: 100%;
@@ -383,6 +410,39 @@ transform: rotate(5deg);
 {
 	background-color: #FDFFDB;	
 	border: 5px solid #CDDC39;	
+}
+
+h3
+{
+	text-align: center; 
+    padding-bottom: 20px;
+}
+
+#logo_chic h3, #logo_palette h3, .palette h2, .delice h2, .chic h2, i, #texte
+{
+	color: transparent;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+}
+
+#logo_delice h3
+{
+	font-family: "Chopin-Script";
+	font-size: 4em;
+}
+
+#logo_chic h3
+{
+	background-image: linear-gradient(120deg, #D58338, #905BFD);
+	font-size: 3.5em;
+	padding-bottom: 50px;
+}
+
+#logo_palette h3
+{
+	background-image: linear-gradient(60deg, #41963B, #D0FEA5);
+	font-family: "KaushanScript-Regular";
+	font-size: 4em;
 }
 
 #mentions_legales
@@ -466,11 +526,12 @@ transform: rotate(5deg);
 
 #note_haut
 {	
-	width: 60%;	
+	width: 80%;	
 	text-align: center;	
 	margin: auto;		
-	font-size: 30px;
-	padding: 0px 0px 30px 0px;	
+	font-size: 3em;
+	padding-bottom: 60px;
+	font-family: "Devonshire-Regular";	
 }
 
 #note_bas 
@@ -485,7 +546,7 @@ transform: rotate(5deg);
 	width: 20%;
 	text-align: right;
 	padding-right: 10px;
-	padding-top: 35px;	
+	padding-top: 25px;	
 }
 
 #note_bas i, .titre_bas h3
@@ -495,7 +556,8 @@ transform: rotate(5deg);
 
 .titre_bas
 {
-	width: 80%;				
+	width: 80%;
+	font-family: "Bernadette";				
 }
 
 .titre_bas h3
@@ -665,7 +727,7 @@ h4
 	border-radius: 10px;	
 	background: linear-gradient(120deg, #009688, #CDDC39);
 	color: transparent;
-	-webkit-background-clip: border;
+	-webkit-background-image: border;
 	-moz-background-clip: border;   	
     margin-top: 90px;	
 }
@@ -804,10 +866,7 @@ h4
 @media screen and (max-width: 1225px)
 {	
 
-	h2
-	{   		    
-		font-size: 1.5em;		    
-	}
+	
 
 	#note_bas p
 	{
@@ -829,12 +888,69 @@ h4
 
 @media screen and (max-width:1024px)
 {
-	
+	h3
+	{ 
+   	 	padding-bottom: 20px;
+	}
+
+
+	#logo_delice h3
+	{
+		font-size: 2em;
+	}
+
+	#logo_chic h3
+	{
+		font-size: 2em;
+		padding-bottom: 20px;
+	}
+
+	#logo_palette h3
+	{
+		font-size: 2em;
+	}
+
+	#note_haut
+	{	
+		font-size: 2em;
+		padding-bottom: 20px;	
+	}
+
+	.chic h2
+	{
+		padding-top: 80px; 
+		font-size: 2em;
+	}
+
+	.note h2
+	{
+		font-size: 2em;    
+	}
+
+	.delice h2
+	{
+		font-size: 2em;
+	}
+
+	.palette h2
+	{
+		font-size: 2em;
+	}
+
+	.delice p, .chic p, .palette p
+	{	
+		font-size: 1.5em;
+	}
+
+	.note p
+	{
+   		font-size: 1.5em;
+	}
 	h1
 	{
-		font-size: 3em;
+		font-size: 3.5em;
 		margin: 0px;
-		padding: 0px
+		padding: 10px
 	}	
 
 	section
@@ -986,6 +1102,65 @@ h4
 }
 @media screen and (max-width: 766px)
 { 
+	h3
+	{ 
+   	 	padding-bottom: 20px;
+	}
+
+
+	#logo_delice h3
+	{
+		font-size: 1.5em;
+	}
+
+	#logo_chic h3
+	{
+		font-size: 1.5em;
+		padding-bottom: 20px;
+	}
+
+	#logo_palette h3
+	{
+		font-size: 1.5em;
+	}
+
+	#note_haut
+	{	
+		font-size: 1.5em;
+		padding-bottom: 20px;	
+	}
+
+	.chic h2
+	{
+		padding-top: 80px; 
+		font-size: 1.5em;
+	}
+
+	.note h2
+	{
+		font-size: 1.5em;    
+	}
+
+	.delice h2
+	{
+		font-size: 1.5em;
+	}
+
+	.palette h2
+	{
+		font-size: 1.5em;
+	}
+
+	.delice p, .chic p, .palette p
+	{	
+		font-size: 1em;
+	}
+
+	.note p
+	{
+   		font-size: 1.5em;
+	}
+
 	#note_bas p
 	{
 		width: 20%;
@@ -1118,11 +1293,6 @@ h4
 		width: 90%;
 	}
 
-	#note_haut
-	{
-		font-size: 20px;
-	}
-
 	.element_repas, .element_prix
 	{			
 		font-size: 14px;	
@@ -1132,12 +1302,6 @@ h4
 	.element_dessert
 	{		
 		height: 40px;			
-	}
-
-	h3
-	{
-		font-size: 1em;
-		padding-bottom: 0px
 	}
 
 	footer
@@ -1206,26 +1370,11 @@ h4
 		font-size: 0.8em;
 		margin: 0px;
 	}
-
-	h2
-	{      
-		font-size: 1em;		    
-	}
-
-	h3, .delice p, .note p, .chic p, .palette p
-	{
-		font-size: 1em;
-	}
-
-	.titre_bas h3
-	{
-		font-size: 0.8em;
-	}
-
+	
 	#note_bas p
 	{
 		margin-top: 0px;
-		margin-top: 10px;
+		margin-top: 10px;		
 	}
 
 	.title_center
@@ -1253,7 +1402,7 @@ h4
 
 	#sous_titre
 	{	
-		font-size: 1.5em;	
+		font-size: 1em;	
 		margin-top: 60px;
 	}		
 	
@@ -1297,6 +1446,7 @@ h4
 @media screen and (max-width: 400px)
 {	
 
+
 	.prochainement a
 	{
 		font-size: 1.5em;
@@ -1320,20 +1470,13 @@ h4
 		padding: 10px 0px;
 	}	
 
-	h4
-	{
-		font-size: 0.8em;
-		margin: 0px;
-	}	
-
 	.element_repas, .element_prix
 	{			
 		font-size: 10px;	
 	}
 	
 	.element_dessert
-	{		
-			
+	{				
 		font-size: 10px;	
 	}
 
@@ -1342,7 +1485,7 @@ h4
 		font-size: 0.8em;
 	}
 
-		#texte
+	#texte
 	{		
 		font-size: 1em;	
 	}
@@ -1378,7 +1521,7 @@ h4
 
 	#texte
 	{		
-	font-size: 0.6em;	
+		font-size: 0.6em;	
 	}
 
 	.box
@@ -1396,6 +1539,66 @@ h4
 	{
 		margin-top: 250px;
 	}
+
+	h3
+	{ 
+   	 	padding-bottom: 20px;
+	}
+
+
+	#logo_delice h3
+	{
+		font-size: 1em;
+	}
+
+	#logo_chic h3
+	{
+		font-size: 1em;
+		padding-bottom: 20px;
+	}
+
+	#logo_palette h3
+	{
+		font-size: 1em;
+	}
+
+	#note_haut
+	{	
+		font-size: 1em;
+		padding-bottom: 20px;	
+	}
+
+	.chic h2
+	{
+		padding-top: 80px; 
+		font-size: 1em;
+	}
+
+	.note h2
+	{
+		font-size: 1em;    
+	}
+
+	.delice h2
+	{
+		font-size: 1em;
+	}
+
+	.palette h2
+	{
+		font-size: 1em;
+	}
+
+	.delice p, .chic p, .palette p
+	{	
+		font-size: 1em;
+	}
+
+	.note p
+	{
+   		font-size: 1em;
+	}
+	
 	
 }
 

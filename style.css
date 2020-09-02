@@ -94,7 +94,7 @@ header
 
 h1
 {
-	margin: 0px 0px 0px 0px;
+	margin: 0px;
 	padding: 0px;
 	font-size: 5em;
 	color: #FDCB46;
@@ -463,7 +463,8 @@ h3
 	height: 100%;
 	font-size: 1em;
 	padding: 10px;	
-	margin: 0px;		
+	margin: 0px;
+	text-align: justify;		
 }
 
 .repas_prix
@@ -1009,7 +1010,8 @@ h4
 {
 	h1
 	{
-		font-size: 1.5em;
+		font-size: 2em;
+		padding: 10px;
 	}
 	#logo_delice h3
 	{
@@ -1098,7 +1100,7 @@ h4
 
  	.menu_haut
 	{	
- 		margin: 150px 0px 0px 0px; 	
+ 		margin: 100px 0px 0px 0px; 	
  	}
  
  	.menu_bas
@@ -1134,14 +1136,15 @@ h4
 	
 	#mentions_legales
 	{	
-		width: 90%;
-		margin: 120px 10px 100px 10px;
+		width: 100%;
+		margin: 120px 0px 100px 0px;
+
 	}
 
 	#loi
 	{	
 		font-size: 1em;
-		padding: 20px;			
+		margin: auto;			
  	}
 
  	h4

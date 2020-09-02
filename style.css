@@ -1105,22 +1105,8 @@ h4
 }
 @media screen and (max-width: 766px)
 { 
-	#texte
-	{		
-		font-size: 2em;	
-	}
-
-	.box
-	{
-		padding-top: 10px;	
-	}
-
-	#point1, #point2, #point3
-	{		
-		width: 25px;
-		height: 25px;
-	}
 	
+
 	h3
 	{ 
    	 	padding-bottom: 20px;

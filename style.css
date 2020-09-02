@@ -742,7 +742,7 @@ h4
 {		
 	width: 100%;
 	height: 150px;
-	margin-top: 150px;	
+	margin-top: 400px;	
 }
 
 #box_loader
@@ -756,7 +756,7 @@ h4
 
 #texte
 {		
-	width: 57%;
+	width: 60%;
 	height: 100%;	
 	font-size: 5em;	
 	font-weight: bold;	
@@ -819,11 +819,7 @@ h4
 
 @media screen and (max-width:1024px)
 {
-	#container
-	{
-		margin-top: 140px;		
-	}
-
+	
 	#box_loader
 	{		
 		
@@ -1012,28 +1008,13 @@ h4
 	{
 		width: 80%;
 	}
-@media screen and (max-width: 690px)
+
+@media screen and (max-width: 764px)
 {	
-
-	#texte
-	{		
-		font-size: 2em;
-	}
-
-	.box
+	#container
 	{
-		margin-top: 20px;	
+		margin-top: 200px;
 	}
-
-	#point1, #point2, #point3
-	{	
-		width: 25px;
-		height: 25px;
-	}
-
-
-@media screen and (max-width: 600px)
-{	
 
 	#texte
 	{		
@@ -1279,7 +1260,10 @@ h4
 {	
 	#container
 	{
-		margin-top: 100px;		
+		margin-top: 100px;
+		width: 100%;
+		height: 150px;
+		margin-top: 200px;	
 	}
 
 	#box_loader

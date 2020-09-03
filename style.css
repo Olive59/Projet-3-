@@ -246,7 +246,6 @@ i
 	font-size: 2em;
 }
 
-
 .note:hover
 {
 	transform:scale(1.4);		
@@ -284,7 +283,6 @@ i
 	position: relative;
 	width: 100%;
 	margin-bottom: 280px;
-
 }
 
 .prochainement a
@@ -351,8 +349,7 @@ footer
 
 #contact:hover
 {		
-	animation: wiggle 1s infinite;
-	
+	animation: wiggle 1s infinite;	
 }
 
 #contact_seul:hover
@@ -367,17 +364,11 @@ footer a:hover
 
 @keyframes wiggle
 {
-0%
-{transform: rotate(-2deg);
-}
-50%
-{
-transform: rotate(0deg);	
-}
-100%
-{
-transform: rotate(5deg);
-}
+	0%{transform: rotate(-2deg);}
+
+	50%{transform: rotate(0deg);}
+
+	100%{transform: rotate(5deg);}
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -566,7 +557,7 @@ h3
 	padding-top: 35px;	
 }
 
-#note_bas i,
+#note_bas i
 {
 	font-size: 2.5em;
 }
@@ -601,8 +592,7 @@ h4
 #page_palette h4
 {
 	padding-top: 40px;
-	margin-top: 30px;
-				
+	margin-top: 30px;				
 }
 
 #page_note h4
@@ -833,7 +823,6 @@ h4
 
 @media screen and (max-width:1024px)
 {
-	
 	#logo_delice h3
 	{
 		font-size: 3em;
@@ -900,9 +889,9 @@ h4
 
   	#page_note, #page_chic, #page_delice, #page_palette
 	{
-	margin: 20px 20px 100px 20px;
-	padding: 40px;
-	height: 100%;
+		margin: 140px 20px 100px 20px;
+		padding: 40px;
+		height: 100%;
 	}
 
 	.element_prix
@@ -912,8 +901,7 @@ h4
 
 	#sous_titre
 	{	
-		font-size: 2em;	
-		margin-top: 80px;
+		display: none;
 	}
 
  	.menu_haut
@@ -953,7 +941,8 @@ h4
 	#mentions_legales
 	{	
 		width: 90%;
-		margin: 120px 10px 100px 10px;
+		margin: auto;
+		margin-top: 120px;
 	}
 
 	#loi
@@ -999,10 +988,10 @@ h4
 	{
 		width: 80%;
 	}
+}
 
 @media screen and (max-width: 600px)
-{	
-	
+{		
 	h1
 	{
 		font-size: 2em;
@@ -1078,7 +1067,7 @@ h4
 
   	#page_note, #page_chic, #page_delice, #page_palette
 	{
-	margin: 20px 0px 100px 0px;
+	margin: 60px 0px 60px 0px;
 	padding: 10px;
 	height: 100%;
 	}
@@ -1086,11 +1075,6 @@ h4
 	.element_prix
 	{
 		text-align: center;
-	}
-
-	#sous_titre
-	{	
-		display: none;
 	}
 
  	.menu_haut
@@ -1122,8 +1106,8 @@ h4
  	.prochainement
 	{
 		margin-bottom: 150px;
-
 	}
+
 	footer
 	{
 		font-size: 1em;			
@@ -1133,7 +1117,6 @@ h4
 	{	
 		width: 100%;
 		margin: 120px 0px 100px 0px;
-
 	}
 
 	#loi
@@ -1207,17 +1190,16 @@ h4
 		padding-right: 0px;	
 	}
 
-	.dessert
-	{
-		width: 100%;	
-		margin: 0px;
-		padding: 20px 0px;
-	}
-
 	.element_dessert
 	{
 		font-size: 12px;	
 		padding-right: 0px;
 	}
 
+	.dessert
+	{
+		width: 100%;	
+		margin: 0px;
+		padding: 20px 0px;
+	}	
 }

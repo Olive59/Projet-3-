@@ -1,0 +1,67 @@
+
+
+@keyframes grow
+{
+	0%, 100%{
+	transform: scale(0.2);
+	background-color: #D58338;
+	}
+
+	50%{
+	transform: scale(1); 
+	background-color: #905BFD;
+	}	
+}
+
+#container
+{		
+	width: 100%;
+	height: 150px;
+	margin-top: 300px;
+	#box_loader{		
+		width: 80%;
+		height: 100%;	
+		display: flex;	
+		justify-content: space-between;
+		margin: auto;
+		.box{
+			width: 10%;
+			margin-top: 40px;
+		}
+	}	
+}
+
+#point1, #point2, #point3, #point4, #point5
+{	
+	border-radius: 50%;    
+	width: 40px;
+	height: 40px;		
+	animation: grow 2s ease-in-out infinite;
+	-webkit-animation: grow 2s ease-in-out infinite;
+}
+
+#point1
+{
+	animation-delay:0s;
+}
+
+#point2
+{
+	animation-delay:0.2s;
+}
+#point3
+{
+	animation-delay:0.4s;
+}
+
+#point4
+{
+	animation-delay:0.6s;
+}
+
+#point5
+{
+	animation-delay:0.8s;
+}
+
+

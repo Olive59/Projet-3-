@@ -1,0 +1,291 @@
+@media screen and (max-width:1024px)
+{
+	#logo_delice h3{
+		font-size: 3em;
+	}
+
+	#logo_chic h3{
+		font-size: 2.5em;
+		padding-bottom: 40px;
+	}
+
+	#logo_palette h3{
+		font-size: 3em;
+		padding-top: 40px;
+	}
+
+	.icone_index{ 
+        font-size: 2em;
+    }                    
+
+	.chic h2{
+		padding-top: 80px; 
+		font-size: 2em;
+	}
+
+	h2{
+		font-size: 2.5em;    
+	}
+
+	.delice p, .chic p, .palette p, .note p
+	{	
+		font-size: 1.5em;
+	}
+
+	section{
+		height: 500px;
+	}
+
+	section a{	
+ 		width: 45%; 		
+  	}
+
+  	#page_note, #page_chic, #page_delice, #page_palette{
+		margin: 140px 20px 100px 20px;
+		padding: 40px;
+		height: 100%;		
+	}
+
+	.element_prix{
+		text-align: center;
+	}
+
+	#sous_titre{	
+		display: none;
+	}
+
+ 	.menu_haut{	
+ 		margin: 200px 0px 40px 0px; 	
+ 	}
+
+ 	.menu_bas{		
+ 		margin: 40px 0px 100px 0px; 	
+ 	}
+
+	.title_center{	
+		width: 100%;	   		
+	}
+
+	.delice p, .note p, .chic p, .palette p{
+		font-size: 1.5em;
+	}	
+
+ 	.prochainement{
+		margin-bottom: 250px;
+		a{	
+			width: 50%;
+			font-size: 3em;		 	 	
+		}	
+	}
+
+	footer{
+		font-size: 2em;			
+	}
+	
+	#mentions_legales{	
+		width: 90%;
+		margin: auto;
+		margin-top: 140px;
+		#loi{	
+			font-size: 1em;
+			padding: 20px;
+			h2{
+				font-size: 1.5em;
+			}			
+		}
+	}
+		
+ 	h4{
+ 		font-size: 1.5em;
+	 }
+	 
+	.border_note{
+		width: 10%;
+		height: 10px;
+		padding-top: 10px;
+    }
+
+	.border_chic, .border_chic2{
+		width: 10%;
+	}
+
+	.border_delice, .border_delice2,.border_delice3{	
+		width: 30%;
+	}
+		
+	.border_palette{
+		width: 10%;
+		margin-top: 85px;		
+	}	
+	
+	#icone_bas{
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (max-width: 600px)
+{	
+	header{
+		height: 10%;
+		padding: 20px 0px;
+	}
+	
+	h1{
+		font-size: 2.5em;
+		padding: 10px;
+	}
+
+	.menu_note h2,  .menu_delice h2, .menu_palette h2{
+		font-size: 2em;
+	}
+
+	.menu_chic h2{
+		font-size: 1.5em;
+	}
+	
+	#page_chic .title_border h4{
+		font-size: 0.8em;
+		padding-top: 15px;
+	}
+
+	#page_note .title_border h4{
+		font-size: 0.8em;
+		padding-top: 5px;
+	}
+
+	#page_delice .title_border h4{
+		font-size: 0.7em;
+		padding-bottom: 30px;
+	}
+
+	#page_palette .title_border h4{
+		font-size: 0.8em;
+		padding:0px;
+		margin: 0px;
+	}
+
+	#logo_delice h3{
+		padding-bottom: 20px;
+		font-size: 2em;
+	}
+
+	#page_note #logo_note h3{	                 
+		font-size: 2em; 
+		}
+	
+	#logo_chic h3{
+		padding-bottom: 20px;
+		font-size: 1.5em;
+	}
+
+	#logo_palette h3{
+		padding-top: 10px;
+		font-size: 2em;
+	}
+
+	#page_note #logo_note{				           
+		padding-bottom: 20px;
+		margin: 10px 0px;
+		.icone_haut{
+            font-size: 3em;      
+    	}
+	}
+
+	.menu_note .icone_index{
+		font-size: 2em;
+	}
+
+	#logo_bas .icone_bas, #logo_bas .titre_bas{
+		font-size: 2em;
+	}
+	
+	.menu{
+		flex-direction: column;
+		margin: 0px;
+		a{	
+			width: 80%;
+			margin: auto; 		
+		}
+	}
+
+  	#page_note, #page_chic, #page_delice, #page_palette{
+		margin: 100px 0px 80px 0px;
+		padding: 10px;
+		height: 100%;
+		border: none;
+	}
+
+ 	.menu_haut{ 	
+ 		margin: 140px 0px 0px 0px; 	
+ 	}
+ 
+ 	.menu_bas	{		
+ 		margin: 0px 0px 50px 0px; 	
+ 	}
+
+	.title_center{	
+		width: 100%;	   		
+	}
+
+	.delice p, .note p, .chic p, .palette p{
+		font-size: 1.5em;
+	}	
+
+ 	.prochainement{
+		margin-bottom: 180px;
+		a{	
+			width: 50%;
+			font-size: 1.5em;
+			padding: 10px;		 	 	
+		}
+	}
+
+	.footer_principal{
+		font-size: 1.2em;
+		height: 8%;	
+		.mention{
+			padding:15px 0px 10px 10px;  			
+		}
+	}
+
+	.contact{		
+		padding:15px 10px 10px 0px; 			
+	}
+	
+	#mentions_legales{	
+		width: 100%;
+		margin: 120px 0px 100px 0px;	
+		.loi{	
+			font-size: 1em;
+			margin: auto;			
+			h2{
+				font-size: 1.5em;
+			}
+		}
+ 	}
+
+ 	.border_chic, .border_chic2{
+		width: 10%;
+	}
+
+	.border_delice, .border_delice2,.border_delice3{	
+		width: 25%;
+	}
+		
+	.border_palette{
+		width: 8%;
+		margin-top: 0px;		
+	}
+
+	.repas_prix .element_repas, .repas_prix .element_prix, .dessert .element_dessert{
+		font-size: 12px;		
+	}
+
+	.repas_prix{
+		margin: 10px 0px;
+	}
+
+	.menu .zoom:hover{
+		transform:scale(0.8);			
+	}
+}

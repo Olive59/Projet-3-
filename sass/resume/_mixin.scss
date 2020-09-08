@@ -1,0 +1,12 @@
+@mixin centrage{
+    position: absolute;	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin effet_degrade{
+	color: transparent;
+    -webkit-background-clip: text;
+	-moz-background-clip: text;
+}

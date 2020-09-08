@@ -1,0 +1,356 @@
+
+//    ****************   Font   **********************    //
+
+.note h2, #logo_note h3, .titre_bas{
+    font-family: "Devonshire-Regular";
+    font-weight: inherit;
+}
+
+#logo_chic h3, .title_border h4, .repas_prix, .dessert{
+    font-family: "Croissant-One";
+}
+
+.palette h2 , #logo_palette h3, #mentions_legales{
+    font-family: "KaushanScript-Regular";
+}
+
+.delice h2, #logo_delice h3{
+    font-family: "Chopin-Script";
+}
+
+header, .sous_titre{ 
+    font-family: "I-am";
+}
+
+footer, .prochainement{ 
+    font-family: "Gravity-Bold";
+}
+
+//    ****************   Index   **********************    //
+
+.menu{
+    display: flex;
+    justify-content: center;    
+    height: 700px;
+    width: 100%;
+    a{
+        width: 35%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0px 60px;
+        border: 5px #F1F1F1 solid;
+        box-shadow: 5px 5px 5px #F1F1F1;
+        border-radius: 5px;  
+    }
+}
+
+.menu_haut{
+    margin:200px 0px 80px 0px
+}
+
+.menu_bas{
+    margin:40px 0px 180px 0px
+}
+
+.note, .chic, .delice,.palette{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    p{    
+        font-size: 2.5em;            
+    }
+}
+
+.menu .title_center{	
+    @include centrage;
+    width: 100%;    
+}
+
+i{
+    background-image: linear-gradient(to left, rgb(246, 145, 106) 20%, rgb(240, 85, 97) 53%);
+}
+
+.note{	
+    color: #3D1319;
+    background-color:#FCDFDB;
+    .icone_index{ 
+        font-size: 4.5em;           
+    }                                                      
+}
+
+.zoom:hover{
+	transform:scale(1.4);		
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;	
+	opacity: 0.3;		
+}
+
+.note h2{
+    font-size: 3em;             
+}              
+
+.chic{	
+    background-color:#FFF5FE;   
+    h2{                
+        background-image: linear-gradient(120deg, #D58338, #905BFD);
+        font-family: "Croissant-One";
+        font-size: 2em;
+    }
+}
+
+.palette{	
+    background-color:#FDFFDB;      
+    h2{
+        font-size: 3em;         
+        background-image: linear-gradient(120deg, #41963B, #D0FEA5);
+    }
+}
+ 
+.delice{	
+    background-color:#F9F9F9;      
+    h2{
+        font-size: 3em;
+        background-image: linear-gradient(120deg,#0431DF, #1E91FB);
+        font-family: "Chopin-Script";
+    }
+}
+ 
+.chic p{
+    color: $color-chic__p;
+}   
+
+.delice p{
+    color: #1E91FB;
+}  
+    
+.palette p{
+    color: #41963B;
+}  
+
+.prochainement{
+	position: relative;
+	width: 100%;
+    margin-bottom: 400px;    
+    a{
+	    text-align: center;	
+	    color: $color-h1;	
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: $bg-h1;		
+        box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.2);	
+        width: 40%;
+        font-size: 3.5em;
+        position: absolute;	
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+        padding: 20px;	 	 	
+    }
+}
+
+//    ******************* Pages **********************    //
+
+
+#page_note, #page_chic, #page_delice, #page_palette{
+	margin: 20px 130px 120px 130px;
+	padding: 80px;
+	height: 100%;
+}
+
+#page_palette h4{
+	padding-top: 40px;
+	margin-top: 30px;				
+}
+
+#page_note h4{
+	margin-top: 5px;
+}
+
+#page_delice h4{
+	margin-top: 5px;		
+}
+
+#page_chic h4{
+	margin-top: 0px;		
+}
+
+#body_mentions, .body_news{
+    background-color:#FDFFDB;
+}
+
+#page_note{	  
+    background-color:#FCDFDB;
+    border: 5px solid #3D1319;
+    #logo_note{	
+        width: 100%;	
+        text-align: center;	
+        margin: 40px 10px; 
+        padding-bottom: 70px;
+        .icone_haut{
+            font-size: 5em;
+            padding-bottom: 10px;
+        }  
+
+        h3{	                 
+            color: #3D1319;
+            margin: 0px; 
+            font-size: 5em; 
+        }
+    }
+}
+
+#logo_bas{	
+	width: 100%;
+	margin: auto;	
+    text-align: center;
+        .titre_bas{  
+            font-size: 3em;                     
+            padding-right: 10px;                       
+            .icone_bas{	
+                padding-right: 20px;               
+                font-size: 1.5em;
+        }
+    }
+}
+
+.icone_index, .index_haut{
+    margin: 0px;
+}
+
+#page_palette{	
+    border: 5px solid #CDDC39;
+    background-color:#FDFFDB;
+    h3{
+        background-image: linear-gradient(60deg, #41963B, #D0FEA5);       
+        font-size: 4em;       
+    }
+}    
+
+#page_chic{
+    background-color:#FFF5FE;
+    border: 5px solid #905BFD;
+        h3{            
+            background-image: linear-gradient(120deg, #D58338, #905BFD);
+            font-size: 3.5em;
+            padding-bottom: 60px;
+    }
+}
+
+#page_delice{
+    border: 5px solid #0431DF;
+    background-color:#F9F9F9;    
+    h3{       
+        font-size: 4em;
+        color: $noir;
+        font-family: "Chopin-Script";
+        padding-bottom: 60px;
+    }
+}
+
+h3{
+	text-align: center;     
+}
+
+h3, .chic h2, .palette h2, .delice h2, i{
+@include effet_degrade;
+}
+
+#sous_titre{
+	text-align: center;
+	font-size: 2em;	
+	margin-top: 150px;
+}
+
+.title_border{
+	display: flex;
+	justify-content: space-around;
+    h4{
+        text-align: center;
+        font-size: 1.8em;
+        width: 40%;
+        .soulignement{
+            background-size: 0% 100%;
+            transition: background-size .5s;
+            &:hover{
+                background-size: 100% 100%;      
+            }
+        }
+    }
+}
+
+.soulignement_delice, .soulignement_note{
+    background: linear-gradient(to top, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0.5) 10%, transparent 10.01%) no-repeat;
+}
+
+.soulignement_chic, .soulignement_palette{
+    background: linear-gradient(to top, rgba(244, 191, 18, 0.5) 0%, rgba(244, 191, 18, 0.5) 10%, transparent 10.01%) no-repeat;
+}
+
+.repas_prix{
+	position: relative;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;	
+	margin: 0px;
+	padding: 20px 0px;	
+	.element_repas{
+        width: 90%;
+        height: 40px;
+        font-size: 20px;	
+        padding-right: 0px;   
+    .element_prix{
+        width: 10%;
+        height: 40px;
+        font-size: 20px;	
+        padding-right: 0px;
+        text-align: right;      	
+        }
+    }
+}
+
+.dessert{
+	position: relative;
+	height: 50px;
+	display: flex;
+	width: 100%;	
+	margin: 0px;
+	padding: 20px 0px;
+    .element_dessert{
+		height: 40px;
+	    font-size: 20px;	
+	    padding-right: 0px;
+    }
+}
+
+#mentions_legales{
+    height: 100%;
+    width: 80%;
+    margin: 150px;
+    .loi{                
+        width: 80%;
+        font-size: 1.5em;
+        padding: 10px;	
+        margin: 0px;
+        text-align: justify;
+        margin:auto;        
+        h2{
+            text-align: center;            
+            font-size: 2em; 	 	 
+        }
+    }
+}
+
+.color_entree{
+    color: #C67412;
+}
+
+.color_plat{
+	color: #9C27B0;
+}
+
+.color_dessert{
+	color: #3F51B5;
+}
+

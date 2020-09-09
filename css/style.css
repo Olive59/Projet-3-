@@ -199,7 +199,7 @@ i {
 }
 
 .note {
-  color: #3D1319;
+  color: #0e0d0d;
   background-color: #FCDFDB;
 }
 .note .icone_index {
@@ -304,8 +304,8 @@ i {
 }
 
 #page_note {
-  background-color: #FCDFDB;
-  border: 5px solid #3D1319;
+  background-color: bg-page_note;
+  border: 5px solid #0e0d0d;
 }
 #page_note #logo_note {
   width: 100%;
@@ -318,7 +318,7 @@ i {
   padding-bottom: 10px;
 }
 #page_note #logo_note h3 {
-  color: #3D1319;
+  color: #0e0d0d;
   margin: 0px;
   font-size: 5em;
 }
@@ -880,4 +880,4 @@ h3, .chic h2, .palette h2, .delice h2, i {
   }
 }
 
-/*# sourceMappingURL=style.css..map */
+/*# sourceMappingURL=style.css.map */

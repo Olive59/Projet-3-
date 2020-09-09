@@ -38,8 +38,8 @@ footer, .prochainement{
         height: 100%;
         overflow: hidden;
         margin: 0px 60px;
-        border: 5px #F1F1F1 solid;
-        box-shadow: 5px 5px 5px #F1F1F1;
+        border: 5px $gris_clair solid;
+        box-shadow: 5px 5px 5px $gris_clair;
         border-radius: 5px;  
     }
 }
@@ -72,8 +72,8 @@ i{
 }
 
 .note{	
-    color: #3D1319;
-    background-color:#FCDFDB;
+    color: $noir;
+    background-color: $bg-page_note;
     .icone_index{ 
         font-size: 4.5em;           
     }                                                      
@@ -91,27 +91,28 @@ i{
 }              
 
 .chic{	
-    background-color:#FFF5FE;   
+    background-color:$bg-page_chic;   
     h2{                
-        background-image: linear-gradient(120deg, #D58338, #905BFD);
+        background-image: linear-gradient(120deg, #D58338, $border-page_chic);
         font-family: "Croissant-One";
         font-size: 2em;
     }
 }
 
 .palette{	
-    background-color:#FDFFDB;      
+    background-color:$bg-page_palette;      
     h2{
         font-size: 3em;         
-        background-image: linear-gradient(120deg, #41963B, #D0FEA5);
+        background-image: linear-gradient(120deg, $palette_p, #D0FEA5);
     }
 }
  
 .delice{	
-    background-color:#F9F9F9;      
+    background-color:$bg-page_delice;      
     h2{
         font-size: 3em;
-        background-image: linear-gradient(120deg,#0431DF, #1E91FB);
+        background-image: linear-gradient(120deg,$border-page_delice, $delice_p
+        );
         font-family: "Chopin-Script";
     }
 }
@@ -121,11 +122,12 @@ i{
 }   
 
 .delice p{
-    color: #1E91FB;
+    color: $delice_p
+    ;
 }  
     
 .palette p{
-    color: #41963B;
+    color: $palette_p;
 }  
 
 .prochainement{
@@ -176,12 +178,12 @@ i{
 }
 
 #body_mentions, .body_news{
-    background-color:#FDFFDB;
+    background-color:$bg-page_palette;
 }
 
 #page_note{	  
-    background-color:#FCDFDB;
-    border: 5px solid #3D1319;
+    background-color:bg-page_note;
+    border: 5px solid $noir;
     #logo_note{	
         width: 100%;	
         text-align: center;	
@@ -193,7 +195,7 @@ i{
         }  
 
         h3{	                 
-            color: #3D1319;
+            color: $noir;
             margin: 0px; 
             font-size: 5em; 
         }
@@ -219,27 +221,27 @@ i{
 }
 
 #page_palette{	
-    border: 5px solid #CDDC39;
-    background-color:#FDFFDB;
+    border: 5px solid $border_page-palette;
+    background-color:$bg-page_palette;
     h3{
-        background-image: linear-gradient(60deg, #41963B, #D0FEA5);       
+        background-image: linear-gradient(60deg, $palette_p, #D0FEA5);       
         font-size: 4em;       
     }
 }    
 
 #page_chic{
-    background-color:#FFF5FE;
-    border: 5px solid #905BFD;
+    background-color:$bg-page_chic;
+    border: 5px solid $border-page_chic;
         h3{            
-            background-image: linear-gradient(120deg, #D58338, #905BFD);
+            background-image: linear-gradient(120deg, #D58338, $border-page_chic);
             font-size: 3.5em;
             padding-bottom: 60px;
     }
 }
 
 #page_delice{
-    border: 5px solid #0431DF;
-    background-color:#F9F9F9;    
+    border: 5px solid $border-page_delice;
+    background-color:$bg-page_delice;    
     h3{       
         font-size: 4em;
         color: $noir;
@@ -343,14 +345,14 @@ h3, .chic h2, .palette h2, .delice h2, i{
 }
 
 .color_entree{
-    color: #C67412;
+    color: $color-entree;
 }
 
 .color_plat{
-	color: #9C27B0;
+	color: $color-plat;
 }
 
 .color_dessert{
-	color: #3F51B5;
+	color: $bleu;
 }
 

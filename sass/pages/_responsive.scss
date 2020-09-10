@@ -128,11 +128,10 @@
 	header{
 		height: 10%;
 		padding: 20px 0px;
-	}
-	
-	h1{
-		font-size: 2.5em;
-		padding: 10px;
+		h1{
+			font-size: 2.5em;
+			padding: 10px;
+		}
 	}
 
 	.menu_note h2,  .menu_delice h2, .menu_palette h2{
@@ -240,17 +239,18 @@
 		}
 	}
 
-	.footer_principal{
+	footer{
 		font-size: 1.2em;
 		height: 8%;	
 		.mention{
-			padding:15px 0px 10px 10px;  			
+			padding:15px 0px 10px 10px; 
+		} 
+		.contact{		
+			padding:15px 10px 10px 0px; 			
 		}
 	}
 
-	.contact{		
-		padding:15px 10px 10px 0px; 			
-	}
+	
 	
 	#mentions_legales{	
 		width: 100%;

@@ -43,7 +43,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Gravity-Bold', 'Croissant-One' 'I-Am';
+  font-family: 'Gravity-Bold', 'Croissant-One', 'I-Am';
 }
 
 body a {
@@ -65,7 +65,7 @@ header a {
   color: #FDCB46;
 }
 
-h1 {
+header h1 {
   position: fixed;
   padding: 20px 0px;
   text-align: center;
@@ -74,7 +74,7 @@ h1 {
   margin: auto;
 }
 
-.footer_principal {
+footer {
   position: fixed;
   bottom: 0;
   background-color: #579C87;
@@ -88,7 +88,30 @@ h1 {
   z-index: 98;
 }
 
-.footer_principal .footer_hover:hover {
+footer a {
+  color: #FDCB46;
+}
+
+footer .mention {
+  text-align: left;
+  width: 50%;
+  padding: 10px 0px 10px 10px;
+}
+
+footer .contact {
+  text-align: right;
+  width: 50%;
+  padding: 10px 10px 10px 0px;
+}
+
+footer .contact-page_news {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+footer .footer_hover:hover {
   animation: wiggle 1s infinite;
   -webkit-animation: wiggle 1s infinite;
 }
@@ -121,29 +144,6 @@ h1 {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg);
   }
-}
-
-footer a {
-  color: #FDCB46;
-}
-
-.mention {
-  text-align: left;
-  width: 50%;
-  padding: 10px 0px 10px 10px;
-}
-
-.contact {
-  text-align: right;
-  width: 50%;
-  padding: 10px 10px 10px 0px;
-}
-
-.contact-page_news {
-  padding: 10px;
-  margin: auto;
-  width: 100%;
-  text-align: center;
 }
 
 .note h2, #logo_note h3, .titre_bas {
@@ -227,12 +227,21 @@ i {
 }
 
 .note {
-  color: #3D1319;
+  color: #0e0d0d;
   background-color: #FCDFDB;
 }
 
 .note .icone_index {
   font-size: 4.5em;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  opacity: 0.3;
 }
 
 .note h2 {
@@ -310,13 +319,30 @@ i {
   height: 100%;
 }
 
+#page_palette h4 {
+  padding-top: 40px;
+  margin-top: 30px;
+}
+
+#page_note h4 {
+  margin-top: 5px;
+}
+
+#page_delice h4 {
+  margin-top: 5px;
+}
+
+#page_chic h4 {
+  margin-top: 0px;
+}
+
 #body_mentions, .body_news {
   background-color: #FDFFDB;
 }
 
 #page_note {
   background-color: #FCDFDB;
-  border: 5px solid #3D1319;
+  border: 5px solid #0e0d0d;
 }
 
 #page_note #logo_note {
@@ -332,7 +358,7 @@ i {
 }
 
 #page_note #logo_note h3 {
-  color: #3D1319;
+  color: #0e0d0d;
   margin: 0px;
   font-size: 5em;
 }
@@ -396,7 +422,6 @@ h3 {
 
 h3, .chic h2, .palette h2, .delice h2, i {
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
 }
@@ -405,6 +430,40 @@ h3, .chic h2, .palette h2, .delice h2, i {
   text-align: center;
   font-size: 2em;
   margin-top: 150px;
+}
+
+.title_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.title_border h4 {
+  text-align: center;
+  font-size: 1.8em;
+  width: 40%;
+}
+
+.title_border h4 .soulignement {
+  background-size: 0% 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+.title_border h4 .soulignement:hover {
+  background-size: 100% 100%;
+}
+
+.soulignement_delice, .soulignement_note {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 255, 0.5)), color-stop(10%, rgba(0, 0, 255, 0.5)), color-stop(10.01%, transparent)) no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0.5) 10%, transparent 10.01%) no-repeat;
+}
+
+.soulignement_chic, .soulignement_palette {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(244, 191, 18, 0.5)), color-stop(10%, rgba(244, 191, 18, 0.5)), color-stop(10.01%, transparent)) no-repeat;
+  background: linear-gradient(to top, rgba(244, 191, 18, 0.5) 0%, rgba(244, 191, 18, 0.5) 10%, transparent 10.01%) no-repeat;
 }
 
 .repas_prix {
@@ -472,40 +531,6 @@ h3, .chic h2, .palette h2, .delice h2, i {
   font-size: 2em;
 }
 
-.title_border {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.title_border h4 {
-  text-align: center;
-  font-size: 1.8em;
-  width: 40%;
-}
-
-.title_border h4 .soulignement {
-  background-size: 0% 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
-}
-
-.title_border h4 .soulignement:hover {
-  background-size: 100% 100%;
-}
-
-.soulignement_delice, .soulignement_note {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 255, 0.5)), color-stop(10%, rgba(0, 0, 255, 0.5)), color-stop(10.01%, transparent)) no-repeat;
-  background: linear-gradient(to top, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0.5) 10%, transparent 10.01%) no-repeat;
-}
-
-.soulignement_chic, .soulignement_palette {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(244, 191, 18, 0.5)), color-stop(10%, rgba(244, 191, 18, 0.5)), color-stop(10.01%, transparent)) no-repeat;
-  background: linear-gradient(to top, rgba(244, 191, 18, 0.5) 0%, rgba(244, 191, 18, 0.5) 10%, transparent 10.01%) no-repeat;
-}
-
 .color_entree {
   color: #C67412;
 }
@@ -516,23 +541,6 @@ h3, .chic h2, .palette h2, .delice h2, i {
 
 .color_dessert {
   color: #3F51B5;
-}
-
-#page_palette h4 {
-  padding-top: 40px;
-  margin-top: 30px;
-}
-
-#page_note h4 {
-  margin-top: 5px;
-}
-
-#page_delice h4 {
-  margin-top: 5px;
-}
-
-#page_chic h4 {
-  margin-top: 0px;
 }
 
 .border_note {
@@ -597,8 +605,6 @@ h3, .chic h2, .palette h2, .delice h2, i {
   border-bottom: 10px groove;
   border-radius: 10px;
   background: linear-gradient(120deg, #009688, #CDDC39);
-  color: transparent;
-  background-image: border;
   margin-top: 90px;
 }
 
@@ -751,11 +757,14 @@ h3, .chic h2, .palette h2, .delice h2, i {
   #mentions_legales {
     width: 90%;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 140px;
   }
-  #loi {
+  #mentions_legales #loi {
     font-size: 1em;
     padding: 20px;
+  }
+  #mentions_legales #loi h2 {
+    font-size: 1.5em;
   }
   h4 {
     font-size: 1.5em;
@@ -785,7 +794,7 @@ h3, .chic h2, .palette h2, .delice h2, i {
     height: 10%;
     padding: 20px 0px;
   }
-  h1 {
+  header h1 {
     font-size: 2.5em;
     padding: 10px;
   }
@@ -809,13 +818,15 @@ h3, .chic h2, .palette h2, .delice h2, i {
   }
   #page_palette .title_border h4 {
     font-size: 0.8em;
+    padding: 0px;
+    margin: 0px;
   }
   #logo_delice h3 {
     padding-bottom: 20px;
     font-size: 2em;
   }
-  #logo_note h3 {
-    font-size: 1em;
+  #page_note #logo_note h3 {
+    font-size: 2em;
   }
   #logo_chic h3 {
     padding-bottom: 20px;
@@ -833,7 +844,7 @@ h3, .chic h2, .palette h2, .delice h2, i {
     font-size: 3em;
   }
   .menu_note .icone_index {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   #logo_bas .icone_bas, #logo_bas .titre_bas {
     font-size: 2em;
@@ -875,17 +886,26 @@ h3, .chic h2, .palette h2, .delice h2, i {
     font-size: 1.5em;
     padding: 10px;
   }
-  .footer_principal {
+  footer {
     font-size: 1.2em;
     height: 8%;
+  }
+  footer .mention {
+    padding: 15px 0px 10px 10px;
+  }
+  footer .contact {
+    padding: 15px 10px 10px 0px;
   }
   #mentions_legales {
     width: 100%;
     margin: 120px 0px 100px 0px;
   }
-  #loi {
-    font-size: 1.5em;
+  #mentions_legales .loi {
+    font-size: 1em;
     margin: auto;
+  }
+  #mentions_legales .loi h2 {
+    font-size: 1.5em;
   }
   .border_chic, .border_chic2 {
     width: 10%;
@@ -895,19 +915,17 @@ h3, .chic h2, .palette h2, .delice h2, i {
   }
   .border_palette {
     width: 8%;
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .repas_prix .element_repas, .repas_prix .element_prix, .dessert .element_dessert {
     font-size: 12px;
   }
-}
-
-.zoom:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  opacity: 0.3;
+  .repas_prix {
+    margin: 10px 0px;
+  }
+  .menu .zoom:hover {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 /*# sourceMappingURL=main.css.map */

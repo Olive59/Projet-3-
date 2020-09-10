@@ -1,4 +1,4 @@
-.footer_principal{
+footer{
     position:fixed;
     bottom: 0;
     background-color: $bg-h1;    
@@ -7,9 +7,32 @@
     display: flex;    
     font-size: 2.5em;
     padding: 10px 0px;    
-    z-index:98; 
+    z-index:98;
+    a{  
+        color: $color-h1;  
+    }
+    
+    .mention{
+        text-align: left;	
+        width: 50%;		
+        padding:10px 0px 10px 10px;    	
+    }    
 
-        .footer_hover:hover{
+    .contact{		
+        text-align: right;		
+        width: 50%;
+        padding:10px 10px 10px 0px; 			
+    } 
+
+    .contact-page_news{		
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .footer_hover:hover{
         animation: wiggle 1s infinite;
         -webkit-animation: wiggle 1s infinite; 
 
@@ -26,30 +49,6 @@
         }	
     }       
 }
- 
-footer a{  
-    color: $color-h1;  
-}
-
-    .mention{
-        text-align: left;	
-        width: 50%;		
-        padding:10px 0px 10px 10px;    	
-} 
-
-    .contact{		
-        text-align: right;		
-        width: 50%;
-        padding:10px 10px 10px 0px; 			
-}
-
-    .contact-page_news{		
-        padding: 10px;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-}
-
 
 
 
